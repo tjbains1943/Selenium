@@ -1,14 +1,19 @@
-import React, { Component } from "react";
+import React, { Component } from "react"
 import Home from "./pages/home/home";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import Signup from "./pages/signup/signup"
 
 
-class App extends Component {
-  render() {
-    return (
-      <Signup/>
-    );
-  }
-}
+const App = () =>
+<Router>
+  <div>
+    <Switch>
+      <Route exact path="/" component={Home} />
+      {/* <Route exact path="/" component={Signup}/> */}
+    </Switch>
+  </div>
+</Router>;
+
 
 export default App;
