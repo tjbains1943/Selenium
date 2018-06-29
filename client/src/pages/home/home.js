@@ -2,59 +2,48 @@ import React, { Component } from "react";
 import "./home.css";
 import Nav from "../../components/Nav/Nav";
 import Carousel from "../../components/Carousel/Carousel";
-import API from '../../utils/API'
-
-
-
+import API from "../../utils/API"
 class Home extends Component {
   state = {
     name: "",
     password: "",
     email: "",
     date: "",
-    user: []
+    user: [],
   };
 
   handleInputChange = event => {
     const { name, value } = event.target;
     this.setState({
-      [name]: value
+      [name]: value,
     });
   };
 
-  
   handleLogin = event => {
     event.preventDefault();
+    console.log(123);
     if (this.state.email && this.state.password) {
-      const user= {email:this.state.email,
-        password:this.state.password}
+      const user = {
+        email: this.state.email,
+        password: this.state.password,
+      };
+      console.log(789);
       API.getUser(user)
-      .then(res => this.setState({ user: res.data }))
-      .catch(err => console.log(err));
-
+        .then(res => this.setState({ user: res.data }))
+        .catch(err => console.log(err));
+        console.log(789);
     }
   };
-
-
-
-
 
   render() {
     return (
       <div>
-        <Nav
-           onChange={this.handleInputChange}
-           onSubmit={this.handleLogin}
-           
-        />
-        <div  className="row">
-        <div  id="pics" className="col-md-9">
-     
-        
-        
-        
-        <Carousel />
-        </div>
+        <Nav onChange={this.handleInputChange} onClick={this.handleLogin} />
+
+        <div className="row">
+          <div id="pics" className="col-md-9">
+            <Carousel />
+          </div>
         </div>
       </div>
     );

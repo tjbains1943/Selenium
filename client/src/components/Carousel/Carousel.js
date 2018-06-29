@@ -19,8 +19,13 @@ const Carousel = () => (
       <div id="first">
       <h5 id="first1">Welcome To SimplyFIT</h5>
       <h4 id="first2">"Everyday workouts for everyday people!"</h4>
-      
-     
+      <Link to={"/signup"}>
+
+      <button type="button" className="btn btn-black">
+    Join The Club/Become A Member!
+  </button>
+  </Link>
+
   </div>
     </div>
   
