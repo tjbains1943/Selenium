@@ -7,24 +7,15 @@ import { Link } from "react-router-dom";
 
 const Nav = props => (
   <div>
-<<<<<<< HEAD
-       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <a className="navbar-brand" href="#"></a>
-=======
        <nav className="navbar navbar-expand-lg navbar-light bg-black">
   <a className="navbar-brand" href=""></a>
->>>>>>> 86cfdcc1439920e0b9c69b0293931cbb16efa765
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
   <div className="collapse navbar-collapse" id="navbarNavDropdown">
     <ul className="navbar-nav ">
       <li className="nav-item active">
-<<<<<<< HEAD
-        <a  className="nav-link mr-5" href="#">SimplyFIT <span className="sr-only">(current)</span></a>
-=======
         <a id="simple" className="nav-link mr-5" href="">SimplyFIT <span className="sr-only">(current)</span></a>
->>>>>>> 86cfdcc1439920e0b9c69b0293931cbb16efa765
       </li>
 
       {/* <li className="nav-item dropdown">
@@ -39,11 +30,7 @@ const Nav = props => (
       </li> */}
 
       <li className="nav-item dropdown">
-<<<<<<< HEAD
-        <a  className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-=======
         <a className="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
->>>>>>> 86cfdcc1439920e0b9c69b0293931cbb16efa765
           Programs
         </a>
         <div className="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
