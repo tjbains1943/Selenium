@@ -10,7 +10,7 @@ const ModalSignUp = props => (
         Join The Club/Become A Member!
       </button>
       
-      <div className="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div className="modal fade" id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered" role="document">
           <div className="modal-content">
             <div className="modal-header">
@@ -28,7 +28,7 @@ const ModalSignUp = props => (
         </div>
         <div className="form-group">
           <label >Email address</label>
-          <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email"></input>
+          <input type="email" className="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Email"></input>
           <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div className="form-group">
