@@ -29,8 +29,10 @@ const Carousel = () => (
             <div class="carousel-item">
               <img class="d-block w-100" src="https://www.crossfitdaedalus.com/wp-content/uploads/2015/04/Gym-Background1.png" alt="Second slide"></img>
               <div class="carousel-caption d-none d-md-block">
-            <h5 id="second">About:</h5>
-            <p>SimplyFIT is your designed for you reach your fitness goals that youve always wanted to achieve. Its a centralized hub for everything fitness!  </p>
+              <div className="second">
+            <h5>About:</h5>
+            <p>SimplyFIT is your designed for you reach your fitness goals that youve always wanted to achieve. Its a centralized hub for everything fitness!</p>
+            </div>
             </div>
             </div>
             <div class="carousel-item">
