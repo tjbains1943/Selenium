@@ -22,7 +22,9 @@ const PricingCard = () => (
                           
                            
                         </ul>
-                        <a href="" className="pricingTable-signup">Enter</a>
+                        <button type="button" className="btn pricingTable-signup" data-toggle="modal" data-target="#exampleModalCenter">
+        Enter
+      </button>
                     </div>
                 </div>
             </div>
@@ -40,7 +42,9 @@ const PricingCard = () => (
                             <li></li>  
                             <li></li>                
                         </ul>
-                        <a href="#" className="pricingTable-signup">Sign Up</a>
+                       <button type="button" className="btn pricingTable-signup" data-toggle="modal" data-target="#exampleModalCenter">
+        Signup
+      </button>
                     </div>
                 </div>
             </div>
@@ -57,8 +61,9 @@ const PricingCard = () => (
                             <li>Access to Recipes</li>  
                             <li>Custom training and diet plan edited every 2 weeks</li>
                         </ul>
-                        <a href="" className="pricingTable-signup">Order Now</a>
-                    </div>
+                        <button type="button" className="btn pricingTable-signup" data-toggle="modal" data-target="#exampleModalCenter">
+        Order Now
+      </button>                    </div>
                 </div>
             </div>
         </div>
