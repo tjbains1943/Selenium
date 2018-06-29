@@ -1,4 +1,4 @@
-const db = require("../models");
+const db = require("../models/users");
 
 
 //Mongoose query abstractions
