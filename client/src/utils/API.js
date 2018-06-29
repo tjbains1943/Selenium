@@ -7,7 +7,7 @@ export default {
   },
   // Gets the book with the given id
   getUser: function(user) {
-    return axios.get("/api/users/", user);
+    return axios.post("/api/users/", user);
   },
   // Deletes the book with the given id
   deleteUser: function(id) {
