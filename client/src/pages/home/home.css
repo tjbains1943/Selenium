@@ -1,3 +1,11 @@
-.backdrop {
-    height: 300px;
+
+#pics{
+    width: 90%;
+    max-height: 550px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    align-items: center;
+;
+    float: none;
 }

@@ -1,0 +1,55 @@
+body{
+    background-image: url("https://www.critica.com.pa/sites/default/files/imagenes/2016/07/27/cross.jpg"); 
+
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+#header{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: underline;
+
+}
+
+#script {
+    color: white;
+    padding-left: 60px;
+    text-indent: 14px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+
+}
+
+#div{
+    padding-top: 40px;
+}
+
+#DT{
+    color: white;
+    padding-left: 60px;
+    padding-top: 20px;
+    text-decoration: underline;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+#background{
+
+    background-color: black;
+}
+
+#footer{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+
+}

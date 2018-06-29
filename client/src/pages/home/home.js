@@ -8,7 +8,11 @@ class Home extends Component {
     return (
       <div>
         <Nav />
+        <div  class="row">
+        <div  id="pics" class="col-md-9">
         <Carousel />
+        </div>
+        </div>
       </div>
     );
   }

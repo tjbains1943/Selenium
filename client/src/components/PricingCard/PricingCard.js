@@ -3,8 +3,14 @@ import React from "react";
 
 const PricingCard = () => (
   <div>
+      
    <div class="demo">
     <div class="container">
+    <div>
+            <h1 id="header">Membership Plans</h1>
+            <p id="script2">-For any membership questions please contact us at:</p>
+            <p id="script2">simplyFIT@yahoo.com</p>
+            </div>
         <div class="row">
             <div class="col-md-4 col-sm-6">
                 <div class="pricingTable">

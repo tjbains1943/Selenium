@@ -1,27 +1,48 @@
 import React from "react";
-// import "../../style.css"
+import "./carousel.css"
 
 const Carousel = () => (
   <div>
-   <div className="backdrop">
+   {/* {/* <div class="style"> */}
         
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100 h-75" src="https://homegymr.com/wp-content/uploads/2016/08/Deadlifts-vs-Squats-Cover-862x525.jpg" alt="First slide"></img>
+            
+              <img class="d-block w-100" src="http://versatilityfitness.com/wp-content/uploads/2016/05/crossfit-background_bw.jpg" alt="First slide"></img>
+              
+              
             
     
-    <div class="carousel-caption d-none d-md-block">
-      <h5>picture</h5>
-      <p>...</p>
+    <div  id="button" class="carousel-caption d-none d-md-block">
+      <div id="first">
+      <h5 id="first1">Welcome To SimplyFIT</h5>
+      <h4 id="first2">"Everyday workouts for everyday people!"</h4>
+      
+      <button type="button" class="btn btn-black" data-toggle="modal" data-target="#exampleModalCenter">
+    Join The Club/Become A Member!
+  </button>
+  </div>
     </div>
   
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100 h-75" src="https://i2.wp.com/newyoufitness.ie/wp-content/uploads/2016/06/Male-Fitness-Models-Background-Image1.jpg" alt="Second slide"></img>
+              <img class="d-block w-100" src="https://www.crossfitdaedalus.com/wp-content/uploads/2015/04/Gym-Background1.png" alt="Second slide"></img>
+              <div class="carousel-caption d-none d-md-block">
+            <h5 id="second">About:</h5>
+            </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100 h-75" src="https://i.pinimg.com/originals/76/89/c5/7689c5513084cd3ae199cec4f9b84af3.jpg" alt="Third slide"></img>
+              <img class="d-block w-100" src="https://i.pinimg.com/originals/76/89/c5/7689c5513084cd3ae199cec4f9b84af3.jpg" alt="Third slide"></img>
+              <div class="carousel-caption d-none d-md-block">
+                  <div id="third">
+                  <h4 id="one">Customized Diet and Workout Plan</h4>  
+                  <p id="text">-Custom training plan written just for you!</p>
+                  <p id="text">-Direct contact with a fitness professional!</p>  
+                  <p id="text">-Custom diet plan designed for your specific goals!</p>         
+                  <p id="text">-Acess to dozens healthy recipes!</p>
+                  </div>
+                </div>
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -32,12 +53,8 @@ const Carousel = () => (
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
-        </div>
-    
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-    Join The Club/Become A Member!
-  </button>
-  
+        </div> */}
+      
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
@@ -70,7 +87,7 @@ const Carousel = () => (
   </div>
   
      </div>
-  </div>
+  // </div>
 );
 
 export default Carousel;

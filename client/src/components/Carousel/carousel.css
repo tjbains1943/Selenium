@@ -1,0 +1,35 @@
+
+
+#first1{
+    padding-top: 35%; 
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+}
+
+#first2{
+    padding-top: 10%;
+    padding-bottom: 15%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+}
+
+#button{
+    padding-bottom: 20%
+}
+
+#second{
+    padding-bottom: 65%;
+}
+
+#third{
+    padding-bottom: 25%;
+    padding-left: 240px;
+}
+
+#text{
+    font-size: 18px;
+}
+
+#one{
+    text-decoration: underline;
+}

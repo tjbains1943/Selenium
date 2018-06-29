@@ -6,9 +6,11 @@ import PricingCard from "../../components/PricingCard/PricingCard";
 class Signup extends Component {
   render() {
     return (
+        <div>
       <div>
         <Nav />
         <PricingCard />
+      </div>
       </div>
     );
   }

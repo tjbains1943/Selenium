@@ -1,5 +1,26 @@
 
-.demo{background-image: url("http://www.wildcatcrossfit.com/wp-content/uploads/2014/03/background-wallpaper-long-view.jpg");}
+.demo{
+    background-image: url("http://blog.muscle-zone.com/wp-content/uploads/2017/06/dumbbell-1966704_960_720.jpg");
+padding-top: 30px;
+
+}
+#header{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+#script2 {
+    color: white;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+
+}
+
 .pricingTable{
     padding: 25px 0 0;
     background: black;
