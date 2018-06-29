@@ -47,8 +47,8 @@ class Home extends Component {
            onSubmit={this.handleLogin}
            
         />
-        <div  class="row">
-        <div  id="pics" class="col-md-9">
+        <div  className="row">
+        <div  id="pics" className="col-md-9">
      
         
         
