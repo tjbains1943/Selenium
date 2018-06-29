@@ -3,9 +3,10 @@ const db = require("../models");
 
 //Mongoose query abstractions
 module.exports = {
-  findAll: function(req, res) {
+  findLogin: function(req, res) {
+    console.log(req.body);
     db.Users
-      .find(req.query)
+      .findOne(req.body)
       .sort({ date: -1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));

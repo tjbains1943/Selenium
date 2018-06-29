@@ -3,6 +3,7 @@ import React from "react";
 
 const PricingCard = () => (
   <div>
+<<<<<<< HEAD
       
    <div class="demo">
     <div class="container">
@@ -17,8 +18,18 @@ const PricingCard = () => (
                     <h3 class="title">Free</h3>
                     <div class="price-value">0$
                         <span class="month">30 Day Trial</span>
+=======
+   <div className="demo">
+    <div className="container">
+        <div className="row">
+            <div className="col-md-4 col-sm-6">
+                <div className="pricingTable">
+                    <h3 className="title">Free</h3>
+                    <div className="price-value">0$
+                        <span className="month">30 Day Trial</span>
+>>>>>>> 7bbbdb68e70b821630c7013d678be9f2a01b8774
                     </div>
-                    <div class="pricing-content">
+                    <div className="pricing-content">
                         <ul>
                         	<li></li>
 							<li>-Access to Entry Level Workouts</li>
@@ -28,17 +39,17 @@ const PricingCard = () => (
                           
                            
                         </ul>
-                        <a href="#" class="pricingTable-signup">Enter</a>
+                        <a href="" className="pricingTable-signup">Enter</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="pricingTable">
-                    <h3 class="title">Daily Trainer Membership</h3>
-                    <div class="price-value">$9.99
-                        <span class="month">Per Month</span>
+            <div className="col-md-4 col-sm-6">
+                <div className="pricingTable">
+                    <h3 className="title">Daily Trainer Membership</h3>
+                    <div className="price-value">$9.99
+                        <span className="month">Per Month</span>
                     </div>
-                    <div class="pricing-content">
+                    <div className="pricing-content">
                         <ul>
                             <li>Access to Daily Trainer</li>
                             <li>Access to Exercise Library</li>
@@ -46,24 +57,24 @@ const PricingCard = () => (
                             <li></li>  
                             <li></li>                
                         </ul>
-                        <a href="#" class="pricingTable-signup">Sign Up</a>
+                        <a href="#" className="pricingTable-signup">Sign Up</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="pricingTable">
-                    <h3 class="title">VIP Training</h3>
-                    <div class="price-value">$129/ 3-Month <br></br> $219/ 6-Month <br></br> $329/ 9-Month
-                        <span class="month">Flat Fee</span>
+            <div className="col-md-4 col-sm-6">
+                <div className="pricingTable">
+                    <h3 className="title">VIP Training</h3>
+                    <div className="price-value">$129/ 3-Month <br></br> $219/ 6-Month <br></br> $329/ 9-Month
+                        <span className="month">Flat Fee</span>
                     </div>
-                    <div class="pricing-content">
+                    <div className="pricing-content">
                         <ul>              
                         	<li>Access to Daily Trainer</li>
                             <li>Access to Exercise Library</li>
                             <li>Access to Recipes</li>  
                             <li>Custom training and diet plan edited every 2 weeks</li>
                         </ul>
-                        <a href="#" class="pricingTable-signup">Order Now</a>
+                        <a href="#" className="pricingTable-signup">Order Now</a>
                     </div>
                 </div>
             </div>
