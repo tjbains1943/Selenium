@@ -3,7 +3,6 @@ import React from "react";
 
 const PricingCard = () => (
   <div>
-<<<<<<< HEAD
       
    <div class="demo">
     <div class="container">
@@ -18,16 +17,6 @@ const PricingCard = () => (
                     <h3 class="title">Free</h3>
                     <div class="price-value">0$
                         <span class="month">30 Day Trial</span>
-=======
-   <div className="demo">
-    <div className="container">
-        <div className="row">
-            <div className="col-md-4 col-sm-6">
-                <div className="pricingTable">
-                    <h3 className="title">Free</h3>
-                    <div className="price-value">0$
-                        <span className="month">30 Day Trial</span>
->>>>>>> 7bbbdb68e70b821630c7013d678be9f2a01b8774
                     </div>
                     <div className="pricing-content">
                         <ul>

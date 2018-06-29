@@ -5,7 +5,6 @@ const Carousel = () => (
   <div>
    {/* {/* <div class="style"> */}
         
-<<<<<<< HEAD
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -31,6 +30,7 @@ const Carousel = () => (
               <img class="d-block w-100" src="https://www.crossfitdaedalus.com/wp-content/uploads/2015/04/Gym-Background1.png" alt="Second slide"></img>
               <div class="carousel-caption d-none d-md-block">
             <h5 id="second">About:</h5>
+            <p>SimplyFIT is your designed for you reach your fitness goals that youve always wanted to achieve. Its a centralized hub for everything fitness!  </p>
             </div>
             </div>
             <div class="carousel-item">
@@ -44,36 +44,16 @@ const Carousel = () => (
                   <p id="text">-Acess to dozens healthy recipes!</p>
                   </div>
                 </div>
-=======
-        <div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img className="d-block w-100 h-75" src="https://homegymr.com/wp-content/uploads/2016/08/Deadlifts-vs-Squats-Cover-862x525.jpg" alt="First slide"></img>
-            
-    
-    <div className="carousel-caption d-none d-md-block">
-      <h5>picture</h5>
-      <p>...</p>
-    </div>
-  
-            </div>
-            <div className="carousel-item">
-              <img className="d-block w-100 h-75" src="https://i2.wp.com/newyoufitness.ie/wp-content/uploads/2016/06/Male-Fitness-Models-Background-Image1.jpg" alt="Second slide"></img>
-            </div>
-            <div className="carousel-item">
-              <img className="d-block w-100 h-75" src="https://i.pinimg.com/originals/76/89/c5/7689c5513084cd3ae199cec4f9b84af3.jpg" alt="Third slide"></img>
->>>>>>> 7bbbdb68e70b821630c7013d678be9f2a01b8774
             </div>
           </div>
-          <a className="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="sr-only">Previous</span>
+          <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
           </a>
-          <a className="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="sr-only">Next</span>
+          <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
           </a>
-<<<<<<< HEAD
         </div> */}
       
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -106,10 +86,6 @@ const Carousel = () => (
       </div>
     </div>
   </div>
-=======
-        </div>
- 
->>>>>>> 7bbbdb68e70b821630c7013d678be9f2a01b8774
   
      </div>
   // </div>

@@ -42,18 +42,17 @@ class Home extends Component {
   render() {
     return (
       <div>
-<<<<<<< HEAD
-        <Nav />
+        <Nav
+           onChange={this.handleInputChange}
+           onSubmit={this.handleLogin}
+           
+        />
         <div  class="row">
         <div  id="pics" class="col-md-9">
-=======
-        <Nav 
-        onChange={this.handleInputChange}
-        onSubmit={this.handleLogin}
+     
         
         
-        />
->>>>>>> 7bbbdb68e70b821630c7013d678be9f2a01b8774
+        
         <Carousel />
         </div>
         </div>
