@@ -9,7 +9,7 @@ const Nav = props => (
     <nav className="navbar navbar-expand-lg navbar-light bg-black">
       <p className="navbar-brand" href="" />
       <button
-        className="navbar-toggler"
+        className="navbar-toggler bg-white"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNavDropdown"

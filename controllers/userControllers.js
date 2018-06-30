@@ -1,5 +1,5 @@
 const db = require("../models/users");
-
+var jwt = require('jsonwebtoken');
 
 //Mongoose query abstractions
 module.exports = {
@@ -8,8 +8,12 @@ module.exports = {
     db.Users
       .findOne(req.body)
       .sort({ date: -1 })
-      .then(dbModel => res.json(dbModel))
+      .then(dbModel => {
+        console.log(dbModel);
+        res.json(dbModel)}
+      )
       .catch(err => res.status(422).json(err));
+
   },
   findById: function(req, res) {
     db.Users
@@ -22,6 +26,9 @@ module.exports = {
       .create(req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
+      var token = jwt.sign({ foo: 'bar' }, 'shhhhh');
+      console.log(token);
+
   },
   update: function(req, res) {
     db.Users
