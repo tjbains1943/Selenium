@@ -122,11 +122,11 @@ const Nav = props => (
                 Sign-In
               </button>
               
-              {/* <Link to={"/signup"}>
+              <Link to={"/signup"}>
                 <button className="btn btn-outline-grey ml-4" type="submit">
                   Sign-Up
                 </button>
-              </Link> */}
+              </Link>
             </form>
           </li>
         </ul>
