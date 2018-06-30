@@ -1,9 +1,10 @@
 
 #pics{
     width: 90%;
-    max-height: 550px;
+    max-height: 520px;
     margin: 0 auto;
     overflow: hidden;
+    padding-top: 20px;
 
     align-items: center;
 ;
