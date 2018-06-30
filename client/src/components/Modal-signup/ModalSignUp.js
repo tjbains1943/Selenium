@@ -12,7 +12,7 @@ const ModalSignUp = props => (
         <div className="modal-dialog modal-dialog-centered" role="document">
           <div className="modal-content">
             <div className="modal-header">
-              <h5 className="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+              <h5 className="modal-title" id="exampleModalCenterTitle">Member Sign-Up</h5>
               <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -22,7 +22,6 @@ const ModalSignUp = props => (
             <div className="form-group">
           <label >First Name</label>
           <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name"></input>
-          <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div className="form-group">
           <label >Email address</label>

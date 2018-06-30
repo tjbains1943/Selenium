@@ -33,8 +33,12 @@ const Carousel = () => (
             <div className="carousel-item">
               <img className="d-block w-100" src="https://www.crossfitdaedalus.com/wp-content/uploads/2015/04/Gym-Background1.png" alt="Second slide"></img>
               <div className="carousel-caption d-none d-md-block">
-            <h5 id="second">About:</h5>
-            <p>SimplyFIT is your designed for you reach your fitness goals that youve always wanted to achieve. Its a centralized hub for everything fitness!  </p>
+              <div className="row">
+              <div id="second" className="col-md-12">
+            <h5>About:</h5>
+            <p>SimplyFIT is designed for you reach your fitness goals that youve always wanted to achieve. Its a centralized hub for everything fitness! From our daily trainer where you can get new workouts every week to our dietary guidelines, we are here to help you reach your goals. Our professional fitness staff hand designs all of the workouts and they also work around the clock to design your custom VIP plan if thats the route you choose to go. You want fitness, come to SimplyFIT and lets get started!  </p>
+            </div>
+            </div>
             </div>
             </div>
             <div className="carousel-item">
