@@ -1,6 +1,7 @@
 import React from "react"
 import Home from "./pages/home/home";
 import Daily from "./pages/Daily/dailytrainer";
+import Profile from "./pages/Profile/profile";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Signup from "./pages/signup/signup"
@@ -14,6 +15,8 @@ const App = () =>
       <Route exact path="/" component={Home} />
       <Route exact path="/daily" component={Daily}/>
       <Route exact path="/signup" component={Signup} />
+      <Route exact path="/profile" component={Profile} />
+
 
     </Switch>
   </div>

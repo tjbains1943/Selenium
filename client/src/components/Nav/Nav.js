@@ -27,17 +27,6 @@ const Nav = props => (
             </a>
           </li>
 
-          {/* <li className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Daily Trainer
-        </a>
-        <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a className="dropdown-item" href="#">Advanced</a>
-          <a className="dropdown-item" href="#">30min Express</a>
-          <a className="dropdown-item" href="#">Beginner</a>
-        </div>
-      </li> */}
-
           <li className="nav-item dropdown">
             <a
               className="nav-link dropdown-toggle text-white"
@@ -98,6 +87,13 @@ const Nav = props => (
               VIP
             </a>
           </li>
+          <li className="nav-item">
+          <Link to={"/Profile"}>
+            <a id="simple" className="nav-link" href="">
+              Profile
+            </a>
+            </Link>
+          </li>
           <li id="push">
             <form className="form-inline my-2 my-lg-0">
               <input
@@ -122,11 +118,11 @@ const Nav = props => (
                 Sign-In
               </button>
               
-              {/* <Link to={"/signup"}>
+              <Link to={"/signup"}>
                 <button className="btn btn-outline-grey ml-4" type="submit">
                   Sign-Up
                 </button>
-              </Link> */}
+              </Link>
             </form>
           </li>
         </ul>
