@@ -20,7 +20,7 @@ const Nav = props => (
         <span className="navbar-toggler-icon" />
       </button>
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul className="navbar-nav ">
+        <ul className="navbar-nav">
           <li className="nav-item active">
             <a id="simple" className="nav-link mr-5" href="">
               SimplyFIT <span className="sr-only">(current)</span>
@@ -69,7 +69,7 @@ const Nav = props => (
           </li>
           <li className="nav-item dropdown">
             <a
-              className="nav-link dropdown-toggle"
+              className="nav-link dropdown-toggle text-white"
               href=""
               id="navbarDropdownMenuLink"
               data-toggle="dropdown"
@@ -83,18 +83,18 @@ const Nav = props => (
               aria-labelledby="navbarDropdownMenuLink"
             >
               <a className="dropdown-item" href="">
-                Action
+                Recipes
               </a>
               <a className="dropdown-item" href="">
-                Another action
+                Healthy Replacements
               </a>
               <a className="dropdown-item" href="">
-                Something else here
+                Supplement Recommendations
               </a>
             </div>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="">
+            <a id="simple" className="nav-link" href="">
               VIP
             </a>
           </li>
@@ -121,11 +121,12 @@ const Nav = props => (
               <button className="btn" onClick={props.onClick} type="submit">
                 Sign-In
               </button>
-              <Link to={"/signup"}>
+              
+              {/* <Link to={"/signup"}>
                 <button className="btn btn-outline-grey ml-4" type="submit">
                   Sign-Up
                 </button>
-              </Link>
+              </Link> */}
             </form>
           </li>
         </ul>
