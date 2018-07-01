@@ -19,7 +19,7 @@ class Profile extends Component {
             </div>
             
           <div className="col-md-6">
-          <h1>analytics chart goes here...</h1>         
+          <h1 id="sidebox">analytics chart goes here...</h1>         
           </div>
 
           </div>
