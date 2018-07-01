@@ -8,7 +8,7 @@ export default {
   // Gets the book with the given id
   getUser: function(user) {
     console.log(456);
-    return axios.post("/api/users/", user);
+    return axios.get("/api/users/", user);
   },
   // Deletes the book with the given id
   deleteUser: function(id) {
@@ -16,6 +16,6 @@ export default {
   },
   // Saves a book to the database
   saveUser: function(userData) {
-    return axios.post("/api/users", userData);
+    return axios.post("/api/users/newUser", userData);
   }
 };

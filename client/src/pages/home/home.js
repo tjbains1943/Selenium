@@ -21,17 +21,17 @@ class Home extends Component {
 
   handleLogin = event => {
     event.preventDefault();
-    console.log(123);
     if (this.state.email && this.state.password) {
       const user = {
         email: this.state.email,
         password: this.state.password,
       };
-      console.log(789);
       API.getUser(user)
-        .then(res => this.setState({ user: res.data }))
+        .then(res => {
+          this.setState({ user: res.data })
+          console.log(res);
+      })
         .catch(err => console.log(err));
-        console.log(789);
     }
   };
 

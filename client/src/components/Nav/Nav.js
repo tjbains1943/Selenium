@@ -46,7 +46,7 @@ const Nav = props => (
                 <p className="dropdown-item m-0">Daily Trainer</p>
               </Link>
               <a className="dropdown-item" href="">
-                Body Building
+                Self Trainer- Bodybuilding/Powerlifting/Circuit Training
               </a>
               <a className="dropdown-item" href="">
                 Power Lifitng
@@ -117,7 +117,7 @@ const Nav = props => (
               <button className="btn" onClick={props.onClick} type="submit">
                 Sign-In
               </button>
-              
+
               <Link to={"/signup"}>
                 <button className="btn btn-outline-grey ml-4" type="submit">
                   Sign-Up
