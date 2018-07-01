@@ -9,7 +9,7 @@ class Profile extends Component {
         <Nav />
 
         <div>
-            <h1 id="header"> Workout Profile </h1>
+            <h1 id="header3"> Workout Profile </h1>
             </div>
           <div className="row" id="div">
           <div className="col-md-6">

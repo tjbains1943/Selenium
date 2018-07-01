@@ -1,8 +1,23 @@
+
 #log{
-    width:  100px;
+    width:  120px;
     height: 40px;
 }
 #simple{
 
     color:white;
 }
+
+#simple1{
+    color: white;
+    font-size: 20px;
+}
+
+#navs{
+    padding-top: 20px;
+    background-color: black;
+}
+
+#logo{
+}
+

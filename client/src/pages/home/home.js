@@ -38,10 +38,17 @@ class Home extends Component {
   render() {
     return (
       <div>
+        {/* <div className="row">
+          <div className="col-md-12">
+        <header>
+        <img id="banner" src="http://mefitness.com.au/wp-content/uploads/2017/12/gym-banner.jpg"></img>
+        </header>
+        </div>
+        </div> */}
         <Nav onChange={this.handleInputChange} onClick={this.handleLogin} />
 
         <div className="row">
-          <div id="pics" className="col-md-8">
+          <div id="pics" className="col-md-10">
             <Carousel />
           </div>
         </div>
