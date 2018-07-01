@@ -1,13 +1,11 @@
 const router = require("express").Router();
 const userControllers = require("../../controllers/userControllers");
 
-router
-  .route("/")
-  .get(userControllers.findLogin)
+router.route("/").post(userControllers.findLogin);
 
-router
-  .route("/newUser")
-  .post(userControllers.create);
+router.route("/newUser").post(userControllers.create);
+
+router.route("/auth").get(userControllers.findAuth);
 
 router
   .route("/:id")

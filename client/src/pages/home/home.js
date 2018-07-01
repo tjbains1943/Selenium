@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import "./home.css";
 import Nav from "../../components/Nav/Nav";
 import Carousel from "../../components/Carousel/Carousel";
-import API from "../../utils/API"
+import API from "../../utils/API";
+var cat;
+
 class Home extends Component {
   state = {
     name: "",
@@ -11,7 +13,13 @@ class Home extends Component {
     date: "",
     user: [],
   };
+  componentDidMount() {
+    if (cat) {
+      console.log(987);
+      API.getAuth(cat);
 
+    }
+  }
   handleInputChange = event => {
     const { name, value } = event.target;
     this.setState({
@@ -28,9 +36,11 @@ class Home extends Component {
       };
       API.getUser(user)
         .then(res => {
-          this.setState({ user: res.data })
-          console.log(res);
-      })
+          localStorage.setItem("token", res.data.token);
+          var cat = localStorage.getItem("token");
+          console.log(123);
+          console.log(cat);
+        })
         .catch(err => console.log(err));
     }
   };

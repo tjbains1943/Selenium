@@ -7,8 +7,7 @@ export default {
   },
   // Gets the book with the given id
   getUser: function(user) {
-    console.log(456);
-    return axios.get("/api/users/", user);
+    return axios.post("/api/users/", user);
   },
   // Deletes the book with the given id
   deleteUser: function(id) {
@@ -17,5 +16,15 @@ export default {
   // Saves a book to the database
   saveUser: function(userData) {
     return axios.post("/api/users/newUser", userData);
-  }
+  },
+  getAuth: function(cat) {
+    var authOptions = {
+      method: "GET",
+      url: "api/users/auth",
+      headers: {
+        Authorization: cat,
+      },
+    };
+    return axios.get(authOptions);
+  },
 };
