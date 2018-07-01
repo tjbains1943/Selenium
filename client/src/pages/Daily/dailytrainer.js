@@ -13,7 +13,7 @@ class Daily extends Component {
             </div>
           <div className="row" id="div">
           <div id="backgorund" className="col-md-6">
-            <p id="script"> The daily trainer is the ideal program for the every day gym goer. If you've ever gotten tired of your routine or just flat out need more workout material then the daily trainer is where you need to be! Fully customized workouts for every day of the week. The workouts are updated every week and dont be discouraged if you find some of the workouts too hard. We have beginner, advanced and 30 minute express workouts for those who don't always have time to be at the gym for very long. </p>
+            <p id="script"> The daily trainer is the ideal program for the every day gym goer. If you've ever gotten tired of your routine or just flat out need more workout material then the daily trainer is where you need to be!</p> <p  id="script">Fully customized workouts for every day of the week. The workouts are updated every week and dont be discouraged if you find some of the workouts too hard.</p><p  id="script"> We have beginner, advanced and 30 minute express workouts for those who don't always have time to be at the gym for very long. </p>
             
 
             <h3 id="DT">-MENS DAILY TRAINER</h3>

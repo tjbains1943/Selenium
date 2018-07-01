@@ -27,17 +27,6 @@ const Nav = props => (
             </a>
           </li>
 
-          {/* <li className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Daily Trainer
-        </a>
-        <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a className="dropdown-item" href="#">Advanced</a>
-          <a className="dropdown-item" href="#">30min Express</a>
-          <a className="dropdown-item" href="#">Beginner</a>
-        </div>
-      </li> */}
-
           <li className="nav-item dropdown">
             <a
               className="nav-link dropdown-toggle text-white"
@@ -97,6 +86,13 @@ const Nav = props => (
             <a id="simple" className="nav-link" href="">
               VIP
             </a>
+          </li>
+          <li className="nav-item">
+          <Link to={"/profile"}>
+            <a id="simple" className="nav-link" href="">
+              Profile
+            </a>
+            </Link>
           </li>
           <li id="push">
             <form className="form-inline my-2 my-lg-0">
