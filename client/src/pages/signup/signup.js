@@ -4,6 +4,7 @@ import Nav from "../../components/Nav/Nav";
 import PricingCard from "../../components/PricingCard/PricingCard";
 import ModalSignUp from "../../components/Modal-signup/ModalSignUp"
 import API from "../../utils/API"
+
 class Signup extends Component {
   state = {
     name: "",
@@ -29,9 +30,14 @@ class Signup extends Component {
       .saveUser(newUser)
       .then(results => {
         console.log(results);
-        //removing the saved article from the results in state
-      })
+        // return (
+          window.location.href = '/profile'
+
+      // )
+            })
       .catch(err => console.log(err));
+
+    
   }
   render() {
     return (

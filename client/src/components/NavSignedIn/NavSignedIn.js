@@ -1,10 +1,10 @@
 import React from "react";
-import "./nav.css";
+import "./navSignedIn.css";
 import { Link } from "react-router-dom";
 
 // import "../../style.css"
 
-const Nav = props => (
+const NavSignedIn = props => (
   <div>
     <nav className="navbar navbar-expand-lg navbar-light bg-black">
       <p className="navbar-brand" href="" />
@@ -90,40 +90,11 @@ const Nav = props => (
           <li className="nav-item">
           <Link to={"/profile"}>
             <p id="simple" className="nav-link m-0" href="">
-              Profile
+              {`${props.name}'s profile`}
             </p>
             </Link>
           </li>
           <li id="push">
-            <form className="form-inline my-2 my-lg-0">
-              <input
-                id="log"
-                className="form-control"
-                name="email"
-                type="search"
-                placeholder="Email"
-                aria-label="Search"
-                onChange={props.onChange}
-              />
-              <input
-                id="log2"
-                className="form-control "
-                name="password"
-                type="search"
-                placeholder="Password"
-                aria-label="Search"
-                onChange={props.onChange}
-              />
-              <button className="btn" onClick={props.onClick} type="submit">
-                Sign-In
-              </button>
-
-              <Link to={"/signup"}>
-                <button className="btn btn-outline-grey ml-4" type="submit">
-                  Sign-Up
-                </button>
-              </Link>
-            </form>
           </li>
         </ul>
       </div>
@@ -131,4 +102,4 @@ const Nav = props => (
   </div>
 );
 
-export default Nav;
+export default NavSignedIn;

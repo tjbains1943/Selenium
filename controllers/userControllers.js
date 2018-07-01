@@ -13,11 +13,11 @@ module.exports = {
   
         console.log(dbModel);
         var token = jwt.sign({ data: dbModel }, "secret");
-        res.json({ token, firstName: dbModel.firstName });
+        res.json({ token, name: "hellow" });
         }
         else {
           console.log(987);
-          res.json("bye")
+          res.json({userStatus: "User Not Found"})
         }
       })
       .catch(err => res.status(422).json(err));

@@ -36,10 +36,15 @@ class Home extends Component {
       };
       API.getUser(user)
         .then(res => {
+          if(res.data.userStatus !== "User Not Found") {
           localStorage.setItem("token", res.data.token);
           var cat = localStorage.getItem("token");
-          console.log(123);
+          console.log(res.data.bye);
           console.log(cat);
+          }
+          else {
+            console.log("User Not Found");
+          }
         })
         .catch(err => console.log(err));
     }

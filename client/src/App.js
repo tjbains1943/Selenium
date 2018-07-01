@@ -5,12 +5,12 @@ import Profile from "./pages/profile/profile";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Signup from "./pages/signup/signup"
-import { differenceInCalendarISOYears } from "date-fns";
+// import { differenceInCalendarISOYears } from "date-fns";
 
 
 const App = () =>
-<Router>
   <div>
+    <Router>
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/daily" component={Daily}/>
@@ -19,8 +19,8 @@ const App = () =>
 
 
     </Switch>
+    </Router>
   </div>
-</Router>;
 
 
 export default App;

@@ -21,8 +21,7 @@ const ModalSignUp = props => (
             <form>
             <div className="form-group">
           <label >First Name</label>
-          <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name" name="name" onChange={props.onChange}></input>
-          <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+          <input type="string" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name" name="name" onChange={props.onChange}></input>
         </div>
         <div className="form-group">
           <label >Email address</label>
