@@ -9,7 +9,7 @@ const Nav = props => (
     <nav className="navbar navbar-expand-lg navbar-light bg-black">
       <p className="navbar-brand" href="" />
       <button
-        className="navbar-toggler"
+        className="navbar-toggler bg-white"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNavDropdown"
@@ -88,7 +88,7 @@ const Nav = props => (
             </a>
           </li>
           <li className="nav-item">
-          <Link to={"/Profile"}>
+          <Link to={"/profile"}>
             <a id="simple" className="nav-link" href="">
               Profile
             </a>

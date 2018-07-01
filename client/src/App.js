@@ -1,7 +1,7 @@
 import React from "react"
 import Home from "./pages/home/home";
 import Daily from "./pages/Daily/dailytrainer";
-import Profile from "./pages/Profile/profile";
+import Profile from "./pages/profile/profile";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Signup from "./pages/signup/signup"
