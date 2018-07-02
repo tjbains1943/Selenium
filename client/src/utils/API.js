@@ -19,12 +19,10 @@ export default {
   },
   getAuth: function(cat) {
     var authOptions = {
-      method: "GET",
-      url: "api/users/auth",
       headers: {
         Authorization: cat,
       },
     };
-    return axios.get(authOptions);
+    return axios.post("/api/users/auth", authOptions);
   },
 };

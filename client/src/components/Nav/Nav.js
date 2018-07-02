@@ -22,9 +22,12 @@ const Nav = props => (
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <a id="simple" className="nav-link mr-5" href="">
+          <Link to={"/"}>
+            <p id="simple" className="nav-link mr-5 m-0" href="">
               SimplyFIT <span className="sr-only">(current)</span>
-            </a>
+            </p>
+            </Link>
+
           </li>
 
           <li className="nav-item dropdown">

@@ -94,6 +94,13 @@ const NavSignedIn = props => (
             </p>
             </Link>
           </li>
+          <li>
+          <Link to={"/"}>
+            <p id="simple" className="nav-link m-0" href="">
+              Sign the f Out
+            </p>
+            </Link>
+            </li>
           <li id="push">
           </li>
         </ul>

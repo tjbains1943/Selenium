@@ -8,9 +8,7 @@ module.exports = {
     console.log(req.body);
     db.Users.findOne({ email: req.body.email })
       .then(dbModel => {
-        if(dbModel) {
-          console.log(456);
-  
+        if(dbModel) {  
         console.log(dbModel);
         var token = jwt.sign({ data: dbModel }, "secret");
         res.json({ token, name: "hellow" });
@@ -23,13 +21,18 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   findAuth: function(req, res) {
-    console.log(123);
-    var decoded = jwt.decode(req.body);
-
-    db.Users.findOne(decoded)
-      .sort({ date: -1 })
+    var decoded = jwt.verify(req.body.headers.Authorization, 'secret');
+    console.log(decoded.data.firstName);
+    db.Users.findOne( {"firstName": decoded.data.firstName})
       .then(dbModel => {
-        res.json({ token, firstName: dbModel.firstName });
+        if(dbModel) {
+          console.log(123);
+        res.json(dbModel);
+        }
+        else {
+          console.log(321);
+          res.json({response: "no bueno"})
+        }
       })
       .catch(err => res.status(422).json(err));
   },
@@ -41,7 +44,7 @@ module.exports = {
   create: function(req, res) {
     db.Users.create(req.body)
       .then(dbModel => {
-        var token = jwt.sign({ data: dbModel }, "shhhhh");
+        var token = jwt.sign({ data: dbModel }, "secret");
         res.json({ token, dbModel });
         console.log(token);
       })

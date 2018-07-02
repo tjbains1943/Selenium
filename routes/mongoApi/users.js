@@ -5,7 +5,7 @@ router.route("/").post(userControllers.findLogin);
 
 router.route("/newUser").post(userControllers.create);
 
-router.route("/auth").get(userControllers.findAuth);
+router.route("/auth").post(userControllers.findAuth);
 
 router
   .route("/:id")

@@ -3,26 +3,33 @@ import "./profile.css";
 // import Nav from "../../components/Nav/Nav";
 import NavSignedIn from "../../components/NavSignedIn/NavSignedIn";
 import API from "../../utils/API";
+var display;
 class Profile extends Component {
-  componentDidMount() {}
-  render() {
-    var world = "tj";
+  state = {}
+
+  componentWillMount() {
     var cat = localStorage.getItem("token");
-  
-    console.log(cat);
-      if (cat !== "undefined") {
-    API.getAuth(cat).then(res => {
-      console.log(res);
-    })
+    // this.setState({display: "chicken"})
+    if (cat !== "undefined") {
+      API.getAuth(cat).then(res => {
+        console.log(res.data.firstName);
+        display= res.data.firstName;
+        this.setState({
+          display })
+      })
+      
+    }
+        else {
+      // console.log('There were problems');
+      // alert("sorry bout that, account problems")
+      // this.props.history.push("/home")
+    }
   }
-  else {
-    // console.log('There were problems');
-    // alert("sorry bout that, account problems")
-    // this.props.history.push("/home")
-  }
+ 
+  render() {     
     return (
       <div>
-        <NavSignedIn name={world} />
+        <NavSignedIn name={this.state.display} />
 
         <div>
           <h1 id="header"> Workout Profile </h1>

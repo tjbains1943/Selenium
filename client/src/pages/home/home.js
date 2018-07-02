@@ -39,8 +39,9 @@ class Home extends Component {
           if(res.data.userStatus !== "User Not Found") {
           localStorage.setItem("token", res.data.token);
           var cat = localStorage.getItem("token");
-          console.log(res.data.bye);
+          console.log(res.data);
           console.log(cat);
+          window.location.href = '/profile'
           }
           else {
             console.log("User Not Found");
