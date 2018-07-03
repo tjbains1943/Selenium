@@ -1,14 +1,12 @@
 import React from "react";
-import "./nav.css";
+import "./navSignedIn.css";
 import { Link } from "react-router-dom";
 
 // import "../../style.css"
 
-const Nav = props => (
+const NavSignedIn = props => (
   <div>
-  
-    <nav id="navs" className="navbar navbar-expand-lg navbar-light bg-black">
-    <img id="logo" src="https://www.freelogoservices.com/api/main/images/1j+ojl1KOMkX9WyofBe43D6kivOHpBVInhjEwXs1M3EMoAJtlSMtgvVq8v8z" alt="First slide"></img>
+    <nav className="navbar navbar-expand-lg navbar-light bg-black">
       <p className="navbar-brand" href="" />
       <button
         className="navbar-toggler bg-white"
@@ -21,15 +19,12 @@ const Nav = props => (
       >
         <span className="navbar-toggler-icon" />
       </button>
-      
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
-      
-        <ul className="navbar-nav ml-auto">
+        <ul className="navbar-nav">
           <li className="nav-item active">
-          
-            {/* <a id="simple1" className="nav-link mr-5" href="">
+            <a id="simple" className="nav-link mr-5" href="">
               SimplyFIT <span className="sr-only">(current)</span>
-            </a> */}
+            </a>
           </li>
 
           <li className="nav-item dropdown">
@@ -50,10 +45,15 @@ const Nav = props => (
               <Link to={"/Daily"}>
                 <p className="dropdown-item m-0">Daily Trainer</p>
               </Link>
-              <Link to={"/Selftrainer"}>
-              <p className="dropdown-item m-0"> Self Trainer</p>
-              <p className="dropdown-item m-0" >(Bodybuilding/Powerlifting/Circuit Training)</p>
-              </Link>
+              <a className="dropdown-item" href="">
+                Self Trainer- Bodybuilding/Powerlifting/Circuit Training
+              </a>
+              <a className="dropdown-item" href="">
+                Power Lifitng
+              </a>
+              <a className="dropdown-item" href="">
+                Circuit/HIIT
+              </a>
             </div>
           </li>
           <li className="nav-item dropdown">
@@ -90,40 +90,18 @@ const Nav = props => (
           <li className="nav-item">
           <Link to={"/profile"}>
             <p id="simple" className="nav-link m-0" href="">
-              Profile
+              {`${props.name}'s profile`}
             </p>
             </Link>
           </li>
+          <li>
+          <Link to={"/"}>
+            <p id="simple" className="nav-link m-0" href="">
+              Sign the f Out
+            </p>
+            </Link>
+            </li>
           <li id="push">
-            <form className="form-inline my-2 my-lg-0">
-              <input
-                id="log"
-                className="form-control"
-                name="email"
-                type="search"
-                placeholder="Email"
-                aria-label="Search"
-                onChange={props.onChange}
-              />
-              <input
-                id="log"
-                className="form-control "
-                name="password"
-                type="search"
-                placeholder="Password"
-                aria-label="Search"
-                onChange={props.onChange}
-              />
-              <button id="signIN" className="btn" onClick={props.onClick} type="submit">
-                Sign-In
-              </button>
-              
-              {/* <Link to={"/signup"}>
-                <button className="btn btn-outline-grey ml-4" type="submit">
-                  Sign-Up
-                </button>
-              </Link> */}
-            </form>
           </li>
         </ul>
       </div>
@@ -131,4 +109,4 @@ const Nav = props => (
   </div>
 );
 
-export default Nav;
+export default NavSignedIn;

@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import "./home.css";
 import Nav from "../../components/Nav/Nav";
 import Carousel from "../../components/Carousel/Carousel";
-import API from "../../utils/API"
+import API from "../../utils/API";
+var cat;
+
 class Home extends Component {
   state = {
     name: "",
@@ -11,7 +13,13 @@ class Home extends Component {
     date: "",
     user: [],
   };
+  componentDidMount() {
+    if (cat) {
+      console.log(987);
+      API.getAuth(cat);
 
+    }
+  }
   handleInputChange = event => {
     const { name, value } = event.target;
     this.setState({
@@ -21,17 +29,25 @@ class Home extends Component {
 
   handleLogin = event => {
     event.preventDefault();
-    console.log(123);
     if (this.state.email && this.state.password) {
       const user = {
         email: this.state.email,
         password: this.state.password,
       };
-      console.log(789);
       API.getUser(user)
-        .then(res => this.setState({ user: res.data }))
+        .then(res => {
+          if(res.data.userStatus !== "User Not Found") {
+          localStorage.setItem("token", res.data.token);
+          var cat = localStorage.getItem("token");
+          console.log(res.data);
+          console.log(cat);
+          window.location.href = '/profile'
+          }
+          else {
+            console.log("User Not Found");
+          }
+        })
         .catch(err => console.log(err));
-        console.log(789);
     }
   };
 

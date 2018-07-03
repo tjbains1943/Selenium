@@ -7,7 +7,7 @@ const users = new Schema({
     password: { type: String, required: true },
     height: { type: String, required: false },
     weight: { type: String, required: false },
-    date: { type: Date, required: true },
+    date: { type: Date, required: false },
     Free: { type: Boolean, default: false },
     dailyTrainer: { type: Boolean, default: false },
     VIP: { type: Boolean, default: false }
@@ -15,4 +15,4 @@ const users = new Schema({
 
 const Users = mongoose.model("Users", users);
 
-module.exports = {Users: Users};
+module.exports = {Users};
