@@ -13,6 +13,20 @@ class Home extends Component {
     date: "",
     user: [],
   };
+
+  componentWillMount() {
+    var cat = localStorage.getItem("token");
+    // this.setState({display: "chicken"})
+    console.log(cat);
+    if (cat) {
+          window.location.href = '/profile'
+      }
+        else {
+      // console.log('There were problems');
+      // alert("sorry bout that, account problems")
+      // this.props.history.push("/home")
+    }
+  }
   componentDidMount() {
     if (cat) {
       console.log(987);

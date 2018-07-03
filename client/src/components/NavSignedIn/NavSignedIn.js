@@ -90,7 +90,7 @@ const NavSignedIn = props => (
           </li>
           <li>
           <Link to={"/"}>
-            <p id="simple" className="nav-link m-0" href="">
+            <p id="simple" className="nav-link m-0" href="" onClick={props.signOut}>
               Sign the f Out
             </p>
             </Link>
