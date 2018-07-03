@@ -32,9 +32,9 @@ class Profile extends Component {
         <NavSignedIn name={this.state.display} />
 
         <div>
-          <h1 id="header"> Workout Profile </h1>
-        </div>
-        <div className="row" id="div">
+            <h1 id="header3"> Workout Profile </h1>
+            </div>
+          <div className="row" id="div">
           <div className="col-md-6">
             <p id="script"> -Track your progress!</p>
             <p id="script"> -Stay on top of your goals!</p>

@@ -6,7 +6,9 @@ import { Link } from "react-router-dom";
 
 const Nav = props => (
   <div>
-    <nav className="navbar navbar-expand-lg navbar-light bg-black">
+  
+    <nav id="navs" className="navbar navbar-expand-lg navbar-light bg-black">
+    <img id="logo" src="https://www.freelogoservices.com/api/main/images/1j+ojl1KOMkX9WyofBe43D6kivOHpBVInhjEwXs1M3EMoAJtlSMtgvVq8v8z" alt="First slide"></img>
       <p className="navbar-brand" href="" />
       <button
         className="navbar-toggler bg-white"
@@ -19,15 +21,15 @@ const Nav = props => (
       >
         <span className="navbar-toggler-icon" />
       </button>
+      
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul className="navbar-nav">
+      
+        <ul className="navbar-nav ml-auto">
           <li className="nav-item active">
-          <Link to={"/"}>
-            <p id="simple" className="nav-link mr-5 m-0" href="">
+          
+            {/* <a id="simple1" className="nav-link mr-5" href="">
               SimplyFIT <span className="sr-only">(current)</span>
-            </p>
-            </Link>
-
+            </a> */}
           </li>
 
           <li className="nav-item dropdown">
@@ -48,15 +50,10 @@ const Nav = props => (
               <Link to={"/Daily"}>
                 <p className="dropdown-item m-0">Daily Trainer</p>
               </Link>
-              <a className="dropdown-item" href="">
-                Self Trainer- Bodybuilding/Powerlifting/Circuit Training
-              </a>
-              <a className="dropdown-item" href="">
-                Power Lifitng
-              </a>
-              <a className="dropdown-item" href="">
-                Circuit/HIIT
-              </a>
+              <Link to={"/Selftrainer"}>
+              <p className="dropdown-item m-0"> Self Trainer</p>
+              <p className="dropdown-item m-0" >(Bodybuilding/Powerlifting/Circuit Training)</p>
+              </Link>
             </div>
           </li>
           <li className="nav-item dropdown">
@@ -109,7 +106,7 @@ const Nav = props => (
                 onChange={props.onChange}
               />
               <input
-                id="log2"
+                id="log"
                 className="form-control "
                 name="password"
                 type="search"
@@ -117,15 +114,15 @@ const Nav = props => (
                 aria-label="Search"
                 onChange={props.onChange}
               />
-              <button className="btn" onClick={props.onClick} type="submit">
+              <button id="signIN" className="btn" onClick={props.onClick} type="submit">
                 Sign-In
               </button>
-
-              <Link to={"/signup"}>
+              
+              {/* <Link to={"/signup"}>
                 <button className="btn btn-outline-grey ml-4" type="submit">
                   Sign-Up
                 </button>
-              </Link>
+              </Link> */}
             </form>
           </li>
         </ul>

@@ -22,7 +22,7 @@ class Daily extends Component {
             </div>
             
           <div className="col-md-6">
-          <img src="https://images.pexels.com/photos/791763/pexels-photo-791763.jpeg?auto=compress&cs=tinysrgb&h=350" alt="First slide"></img>
+          <img src="http://anytime-deals.com/wp-content/uploads/2018/02/pexels-photo-414029.jpg" alt="First slide"></img>
           
           </div>
 

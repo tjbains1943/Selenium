@@ -1,8 +1,29 @@
+
 #log{
-    width:  100px;
+    width:  120px;
     height: 40px;
+    color:white;
+    background-color: black;
+    border-color: darkred;
 }
 #simple{
 
     color:white;
 }
+
+#simple1{
+    color: white;
+    font-size: 20px;
+}
+
+#navs{
+    padding-top: 20px;
+    background-color: black;
+}
+
+#signIN{
+    color: white;
+    background-color:darkred;
+    border-color: black;
+}
+
