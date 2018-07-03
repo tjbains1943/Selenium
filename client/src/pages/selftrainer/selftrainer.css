@@ -1,11 +1,12 @@
 
-#header3{
-    padding-top: 20px;
+#header1{
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
-    color: white;
+    color: white ;
     font-size: 60px;
     font-family: 'Oswald', sans-serif;
-    text-decoration: underline;
+    text-decoration: underline darkred;
 
 }
 
@@ -15,6 +16,16 @@
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
 
+}
+
+#DTT{   
+        
+        color: white;
+        padding-left: 60px;
+        padding-top: 20px;
+        text-decoration: underline;
+        font-family: 'Oswald', sans-serif;
+    
 }
 
 #footer{
@@ -27,7 +38,8 @@
 
 }
 
-#sidebox{
-
+#purchase{
+    background-color: darkred;
     color:white;
+    border-color: white;
 }
