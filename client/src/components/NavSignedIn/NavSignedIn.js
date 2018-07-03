@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
 
 const NavSignedIn = props => (
   <div>
-    <nav className="navbar navbar-expand-lg navbar-light bg-black">
+    <nav id="navs" className="navbar navbar-expand-lg navbar-light bg-black">
+    <img id="logo" src="https://www.freelogoservices.com/api/main/images/1j+ojl1KOMkX9WyofBe43D6kivOHpBVInhjEwXs1M3EMoAJtlSMtgvVq8v8z" alt="First slide"></img>
       <p className="navbar-brand" href="" />
       <button
         className="navbar-toggler bg-white"
@@ -20,12 +21,7 @@ const NavSignedIn = props => (
         <span className="navbar-toggler-icon" />
       </button>
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul className="navbar-nav">
-          <li className="nav-item active">
-            <a id="simple" className="nav-link mr-5" href="">
-              SimplyFIT <span className="sr-only">(current)</span>
-            </a>
-          </li>
+        <ul className="navbar-nav ml-auto">
 
           <li className="nav-item dropdown">
             <a
@@ -45,15 +41,13 @@ const NavSignedIn = props => (
               <Link to={"/Daily"}>
                 <p className="dropdown-item m-0">Daily Trainer</p>
               </Link>
+              <Link to={"/Selftrainer"}>
               <a className="dropdown-item" href="">
-                Self Trainer- Bodybuilding/Powerlifting/Circuit Training
+                Self Trainer
+                <p>(Bodybuilding/Powerlifting/Circuit Training)</p>
               </a>
-              <a className="dropdown-item" href="">
-                Power Lifitng
-              </a>
-              <a className="dropdown-item" href="">
-                Circuit/HIIT
-              </a>
+              </Link>
+           
             </div>
           </li>
           <li className="nav-item dropdown">
