@@ -26,10 +26,20 @@ class Profile extends Component {
     }
   }
  
+  SignOut = () => {
+    localStorage.clear();
+    console.log(678);
+  };
+
+
+
   render() {     
     return (
       <div>
-        <NavSignedIn name={this.state.display} />
+        <NavSignedIn 
+        name={this.state.display}
+        signOut={this.SignOut}
+        />
 
         <div>
           <h1 id="header"> Workout Profile </h1>

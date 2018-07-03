@@ -12,6 +12,19 @@ class Signup extends Component {
     email: "",
     date: ""
   };
+
+  componentWillMount() {
+    var cat = localStorage.getItem("token");
+    // this.setState({display: "chicken"})
+    if (cat) {
+          window.location.href = '/profile'
+      }
+        else {
+      // console.log('There were problems');
+      // alert("sorry bout that, account problems")
+      // this.props.history.push("/home")
+    }
+  }
   handleInputChange = event => {
     const { name, value } = event.target;
     this.setState({
