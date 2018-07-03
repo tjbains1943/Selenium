@@ -2,6 +2,9 @@
 #log{
     width:  120px;
     height: 40px;
+    color:white;
+    background-color: black;
+    border-color: darkred;
 }
 #simple{
 
@@ -18,6 +21,9 @@
     background-color: black;
 }
 
-#logo{
+#signIN{
+    color: white;
+    background-color:darkred;
+    border-color: black;
 }
 

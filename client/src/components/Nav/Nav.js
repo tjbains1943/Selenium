@@ -114,7 +114,7 @@ const Nav = props => (
                 aria-label="Search"
                 onChange={props.onChange}
               />
-              <button className="btn" onClick={props.onClick} type="submit">
+              <button id="signIN" className="btn" onClick={props.onClick} type="submit">
                 Sign-In
               </button>
               
