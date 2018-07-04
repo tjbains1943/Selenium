@@ -106,10 +106,10 @@ const Nav = props => (
                 onChange={props.onChange}
               />
               <input
-                id="log"
+                id="log1"
                 className="form-control "
                 name="password"
-                type="search"
+                type="password"
                 placeholder="Password"
                 aria-label="Search"
                 onChange={props.onChange}

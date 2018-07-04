@@ -1,37 +1,44 @@
 const db = require("../models/users");
-var jwt = require("jsonwebtoken");
+const jwt = require("jsonwebtoken");
+const bcrypt = require("bcrypt");
 
 //Mongoose query abstractions
 module.exports = {
   findLogin: function(req, res) {
-    console.log("hello world");
-    console.log(req.body);
+    // console.log("hello world");
+    // console.log(req.body);
     db.Users.findOne({ email: req.body.email })
       .then(dbModel => {
-        if(dbModel) {  
-        console.log(dbModel);
-        var token = jwt.sign({ data: dbModel }, "secret");
-        res.json({ token, name: "hellow" });
-        }
+        if (dbModel) {
+          console.log(dbModel);
+          if (bcrypt.compare(req.body.password, dbModel.password)) {
+            console.log("walla");
+            var token = jwt.sign({ data: dbModel }, "secret");
+            res.json({ token, name: "hellow" });
+          }
+        } 
         else {
           console.log(987);
-          res.json({userStatus: "User Not Found"})
+          res.json({ userStatus: "User Not Found" });
         }
       })
       .catch(err => res.status(422).json(err));
   },
   findAuth: function(req, res) {
-    var decoded = jwt.verify(req.body.headers.Authorization, 'secret');
+    if(!req.body.headers.Authorization) {
+      return;
+    }
+    var decoded = jwt.verify(req.body.headers.Authorization, "secret");
+    
     console.log(decoded.data.firstName);
-    db.Users.findOne( {"firstName": decoded.data.firstName})
+    db.Users.findOne({ firstName: decoded.data.firstName })
       .then(dbModel => {
-        if(dbModel) {
+        if (dbModel) {
           console.log(123);
-        res.json(dbModel);
-        }
-        else {
+          res.json(dbModel);
+        } else {
           console.log(321);
-          res.json({response: "no bueno"})
+          res.json({ response: "no bueno" });
         }
       })
       .catch(err => res.status(422).json(err));
@@ -41,9 +48,13 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  create: function(req, res) {
+  create: async function(req, res) {
+    const hash = await bcrypt.hash(req.body.password, 10);
+    req.body.password = hash;
+    console.log(req.body);
     db.Users.create(req.body)
       .then(dbModel => {
+        console.log(dbModel);
         var token = jwt.sign({ data: dbModel }, "secret");
         res.json({ token, dbModel });
         console.log(token);

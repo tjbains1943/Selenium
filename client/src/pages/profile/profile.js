@@ -27,7 +27,7 @@ class Profile extends Component {
   }
  
   SignOut = () => {
-    localStorage.clear();
+    localStorage.removeItem('token');
     console.log(678);
   };
 

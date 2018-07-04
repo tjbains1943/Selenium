@@ -44,8 +44,8 @@ class Signup extends Component {
         console.log(results);
         localStorage.setItem("token", results.data.token);
         // return (
-          alert("Your account has been created! Welcome to SimplyFIT, your one stop shop for fitness plans")
-          window.location.href = '/profile'
+          // alert("Your account has been created! Welcome to SimplyFIT, your one stop shop for fitness plans")
+          // window.location.href = '/profile'
 
       // )
             })
