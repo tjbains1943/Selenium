@@ -6,6 +6,7 @@ import Selftrainer from "./pages/selftrainer/selftrainer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Signup from "./pages/signup/signup"
+import Admin from "./pages/admin/admin";
 // import { differenceInCalendarISOYears } from "date-fns";
 
 
@@ -18,7 +19,7 @@ const App = () =>
       <Route exact path="/signup" component={Signup} />
       <Route exact path="/profile" component={Profile} />
       <Route exact path="/selftrainer" component={Selftrainer} />
-
+      <Route exact path="/admin" component={Admin} />
     </Switch>
     </Router>
   </div>
