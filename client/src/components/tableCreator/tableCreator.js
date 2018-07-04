@@ -11,37 +11,37 @@ class Products extends Component {
           this.state.products = [
             {
               id: 1,
-              category: '',
-              price: '',
-              qty: "",
+              Exercise: '',
+              Weight: '',
+              Reps: "",
               name: "",
               time: ""
             },{
                 id: 2,
-                category: '',
-                price: '',
-                qty: "",
+                Exercise: '',
+                Weight: '',
+                Reps: "",
                 name: "",
                 time: ""
               },{
                 id: 3,
-                category: '',
-                price: '',
-                qty: "",
+                Exercise: '',
+                Weight: '',
+                Reps: "",
                 name: "",
                 time: ""
               },{
                 id: 4,
-                category: '',
-                price: '',
-                qty: "",
+                Exercise: '',
+                Weight: '',
+                Reps: "",
                 name: "",
                 time: ""
               },{
                 id: 5,
-                category: '',
-                price: '',
-                qty: "",
+                Exercise: '',
+                Weight: '',
+                Reps: "",
                 name: "",
                 time: ""
               }
@@ -62,9 +62,9 @@ class Products extends Component {
           var product = {
             id: id,
             name: "",
-            price: "",
-            category: "",
-            qty: 0,
+            Weight: "",
+            Exercise: "",
+            Reps: "",
             time: "",
           }
           this.state.products.push(product);
@@ -175,18 +175,18 @@ class Products extends Component {
                 id: this.props.product.id
               }}/>
               <EditableCell onProductTableUpdate={this.props.onProductTableUpdate} cellData={{
-                type: "price",
-                value: this.props.product.price,
+                type: "Weight",
+                value: this.props.product.Weight,
                 id: this.props.product.id
               }}/>
               <EditableCell onProductTableUpdate={this.props.onProductTableUpdate} cellData={{
-                type: "qty",
-                value: this.props.product.qty,
+                type: "Reps",
+                value: this.props.product.Reps,
                 id: this.props.product.id
               }}/>
               <EditableCell onProductTableUpdate={this.props.onProductTableUpdate} cellData={{
-                type: "category",
-                value: this.props.product.category,
+                type: "Exercise",
+                value: this.props.product.Exercise,
                 id: this.props.product.id
               }}/>
               <EditableCell onProductTableUpdate={this.props.onProductTableUpdate} cellData={{
