@@ -110,9 +110,7 @@ class Products extends Component {
         }
         render() {
           return (
-            <div>
-            <h1 className="text-white"></h1>
-      
+            <div>      
               <input type="text" placeholder="Search..." value={this.props.filterText} ref="filterTextInput" onChange={this.handleChange.bind(this)}/>
             </div>
       
@@ -129,7 +127,6 @@ class Products extends Component {
           var filterText = this.props.filterText;
           var product = this.props.products.map(function(product) {
             if (product.name.indexOf(filterText) === -1) {
-              return;
             }
             return (<ProductRow onProductTableUpdate={onProductTableUpdate} product={product} onDelEvent={rowDel.bind(this)} key={product.id}/>)
           });

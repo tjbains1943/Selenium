@@ -11,7 +11,7 @@ class Admin extends Component {
         <Nav />
         <div>
         <h1 className="text-white"> Monday </h1>
-        <Products />
+        <Products display="Monday" />
         </div>
         <div>
         <h1 className="text-white"> Tuesday </h1>
