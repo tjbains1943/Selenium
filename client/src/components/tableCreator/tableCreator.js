@@ -1,7 +1,29 @@
 import React, { Component } from "react";
+import TableAPI from "../../utils/Table-API";
 
 class Products extends Component {
+  saveUser = () => {
+    // console.log(123);
+    let newUser = {
+      exercise: this.state.products,
+      day: this.props.day,
+      weekStart: this.props.weekStart
+    }
+    console.log(newUser);
+          TableAPI
+      .saveTable(newUser)
+      // .then(results => {
+      //   // console.log(results);
+      //   localStorage.setItem("token", results.data.token);
+      //   // return (
+      //     // alert("Your account has been created! Welcome to SimplyFIT, your one stop shop for fitness plans")
+      //     // window.location.href = '/profile'
 
+      // // )
+      //       })
+      // .catch(err => console.log(err));
+
+          }
         constructor(props) {
           super(props);
       
@@ -10,41 +32,41 @@ class Products extends Component {
           this.state.filterText = "";
           this.state.products = [
             {
-              id: 1,
-              Exercise: '',
+              className: 1,
+              name: "",
               Weight: '',
               Reps: "",
-              name: "",
+              Sets: '',
               time: ""
-            },{
-                id: 2,
-                Exercise: '',
-                Weight: '',
-                Reps: "",
-                name: "",
-                time: ""
-              },{
-                id: 3,
-                Exercise: '',
-                Weight: '',
-                Reps: "",
-                name: "",
-                time: ""
-              },{
-                id: 4,
-                Exercise: '',
-                Weight: '',
-                Reps: "",
-                name: "",
-                time: ""
-              },{
-                id: 5,
-                Exercise: '',
-                Weight: '',
-                Reps: "",
-                name: "",
-                time: ""
-              }
+            }, {
+              className: 2,
+              name: "",
+              Weight: '',
+              Reps: "",
+              Sets: '',
+              time: ""
+            }, {
+              className: 3,
+              name: "",
+              Weight: '',
+              Reps: "",
+              Sets: '',
+              time: ""
+            }, {
+              className: 4,
+              name: "",
+              Weight: '',
+              Reps: "",
+              Sets: '',
+              time: ""
+            }, {
+              className: 5,
+              name: "",
+              Weight: '',
+              Reps: "",
+              Sets: '',
+              time: ""
+            }
           ];
       
         }
@@ -58,12 +80,12 @@ class Products extends Component {
         };
       
         handleAddEvent(evt) {
-          var id = (+ new Date() + Math.floor(Math.random() * 999999)).toString(36);
+          var className = (+ new Date() + Math.floor(Math.random() * 999999)).toString(36);
           var product = {
-            id: id,
+            className: className,
             name: "",
             Weight: "",
-            Exercise: "",
+            Sets: "",
             Reps: "",
             time: "",
           }
@@ -74,15 +96,15 @@ class Products extends Component {
       
         handleProductTable(evt) {
           var item = {
-            id: evt.target.id,
+            className: evt.target.className,
             name: evt.target.name,
-            value: evt.target.value
+            value: evt.target.value,
           };
       var products = this.state.products.slice();
         var newProducts = products.map(function(product) {
       
           for (var key in product) {
-            if (key == item.name && product.id == item.id) {
+            if (key == item.name && product.className == item.className) {
               product[key] = item.value;
       
             }
@@ -97,7 +119,7 @@ class Products extends Component {
           return (
             <div>
               <SearchBar filterText={this.state.filterText} onUserInput={this.handleUserInput.bind(this)}/>
-              <ProductTable onProductTableUpdate={this.handleProductTable.bind(this)} onRowAdd={this.handleAddEvent.bind(this)} onRowDel={this.handleRowDel.bind(this)} products={this.state.products} filterText={this.state.filterText}/>
+              <ProductTable className={this.props.className} onClick={this.saveUser} onProductTableUpdate={this.handleProductTable.bind(this)} onRowAdd={this.handleAddEvent.bind(this)} onRowDel={this.handleRowDel.bind(this)} products={this.state.products} filterText={this.state.filterText}/>
             </div>
           );
       
@@ -128,7 +150,7 @@ class Products extends Component {
           var product = this.props.products.map(function(product) {
             if (product.name.indexOf(filterText) === -1) {
             }
-            return (<ProductRow onProductTableUpdate={onProductTableUpdate} product={product} onDelEvent={rowDel.bind(this)} key={product.id}/>)
+            return (<ProductRow onProductTableUpdate={onProductTableUpdate} product={product} onDelEvent={rowDel.bind(this)} key={product.className}/>)
           });
           return (
             <div>
@@ -153,6 +175,7 @@ class Products extends Component {
                 </tbody>
       
               </table>
+              <button className={this.props.className} onClick={this.props.onClick}>Submit</button>
             </div>
           );
       
@@ -160,7 +183,7 @@ class Products extends Component {
       
       }
       
-      class ProductRow extends React.Component {
+      class ProductRow extends Component {
         onDelEvent() {
           this.props.onDelEvent(this.props.product);
       
@@ -172,27 +195,27 @@ class Products extends Component {
               <EditableCell onProductTableUpdate={this.props.onProductTableUpdate} cellData={{
                 "type": "name",
                 value: this.props.product.name,
-                id: this.props.product.id
+                className: this.props.product.className
               }}/>
               <EditableCell onProductTableUpdate={this.props.onProductTableUpdate} cellData={{
                 type: "Weight",
                 value: this.props.product.Weight,
-                id: this.props.product.id
+                className: this.props.product.className
               }}/>
               <EditableCell onProductTableUpdate={this.props.onProductTableUpdate} cellData={{
                 type: "Reps",
                 value: this.props.product.Reps,
-                id: this.props.product.id
+                className: this.props.product.className
               }}/>
               <EditableCell onProductTableUpdate={this.props.onProductTableUpdate} cellData={{
-                type: "Exercise",
-                value: this.props.product.Exercise,
-                id: this.props.product.id
+                type: "Sets",
+                value: this.props.product.Sets,
+                className: this.props.product.className
               }}/>
               <EditableCell onProductTableUpdate={this.props.onProductTableUpdate} cellData={{
                 type: "time",
                 value: this.props.product.time,
-                id: this.props.product.id
+                className: this.props.product.className
               }}/>
               <td className="del-cell">
                 <input type="button" onClick={this.onDelEvent.bind(this)} value="X" className="del-btn"/>
@@ -208,7 +231,7 @@ class Products extends Component {
         render() {
           return (
             <td>
-              <input type='text' name={this.props.cellData.type} id={this.props.cellData.id} value={this.props.cellData.value} onChange={this.props.onProductTableUpdate}/>
+              <input type='text' name={this.props.cellData.type} className={this.props.cellData.className} value={this.props.cellData.value} onChange={this.props.onProductTableUpdate}/>
             </td>
           );
       

@@ -16,7 +16,7 @@ export default {
   // Saves a book to the database
   
   saveTable: function(userData) {
-    return axios.post("/api/dailyTrainer/newUser", userData);
+    return axios.post("/api/dailyTrainer/", userData);
   },
   getAuth: function(cat) {
     var authOptions = {

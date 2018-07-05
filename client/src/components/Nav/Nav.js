@@ -94,6 +94,13 @@ const Nav = props => (
             </p>
             </Link>
           </li>
+          <li className="nav-item">
+          <Link to={"/admin"}>
+            <p id="simple" className="nav-link m-0" href="">
+              admin
+            </p>
+            </Link>
+          </li>
           <li id="push">
             <form className="form-inline my-2 my-lg-0">
               <input
