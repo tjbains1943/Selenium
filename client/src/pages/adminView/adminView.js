@@ -17,7 +17,7 @@ class AdminView extends Component {
         <div>
         <AdminNavBar NavBar />
         <div>
-          <h5 className="text-white">Please select the day Monday, to View/Update/Remove all workouts of the week.</h5>
+          <h5 className="text-white">Please select the day Monday, to View/Update/Remove all workouts of that week.</h5>
         <input type="date" onChange={this.handleInputChange} name="weekStart"  placeholder="Week Start dd/mm/yy"></input>
         <button type="submit" className="mt-3 btn btn-block">Submit</button>
         </div>
