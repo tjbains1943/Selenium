@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./profile.css";
-import Nav from "../../components/Nav/Nav";
+// import Nav from "../../components/Nav/Nav";
 import NavSignedIn from "../../components/NavSignedIn/NavSignedIn";
 import API from "../../utils/API";
 var display;
@@ -27,7 +27,7 @@ class Profile extends Component {
   }
  
   SignOut = () => {
-    localStorage.clear();
+    localStorage.removeItem('token');
     console.log(678);
   };
 

@@ -96,6 +96,13 @@ const Nav = props => (
             </p>
             </Link>
           </li>
+          <li className="nav-item">
+          <Link to={"/admin"}>
+            <p id="simple" className="nav-link m-0" href="">
+              admin
+            </p>
+            </Link>
+          </li>
           <li id="push">
             <form className="form-inline my-2 my-lg-0">
               <input
@@ -108,10 +115,10 @@ const Nav = props => (
                 onChange={props.onChange}
               />
               <input
-                id="log"
+                id="log1"
                 className="form-control "
                 name="password"
-                type="search"
+                type="password"
                 placeholder="Password"
                 aria-label="Search"
                 onChange={props.onChange}
@@ -120,11 +127,11 @@ const Nav = props => (
                 Sign-In
               </button>
               
-              {/* <Link to={"/signup"}>
+              <Link to={"/signup"}>
                 <button className="btn btn-outline-grey ml-4" type="submit">
                   Sign-Up
                 </button>
-              </Link> */}
+              </Link>
             </form>
           </li>
         </ul>

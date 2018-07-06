@@ -42,10 +42,10 @@ const NavSignedIn = props => (
                 <p className="dropdown-item m-0">Daily Trainer</p>
               </Link>
               <Link to={"/Selftrainer"}>
-              <a className="dropdown-item" href="">
+              <span className="dropdown-item m-0" href="">
                 Self Trainer
                 <p>(Bodybuilding/Powerlifting/Circuit Training)</p>
-              </a>
+              </span>
               </Link>
            
             </div>
@@ -90,7 +90,7 @@ const NavSignedIn = props => (
           </li>
           <li>
           <Link to={"/"}>
-            <p id="simple" className="nav-link m-0" href="" onClick={props.signOut}>
+            <p id="simple1" className="nav-link m-0" href="" onClick={props.signOut}>
               Sign the f Out
             </p>
             </Link>

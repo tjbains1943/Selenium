@@ -1,29 +1,16 @@
-import React, { Component } from "react";
-import "./selftrainer.css";
-import Nav from "../../components/Nav/Nav";
-import SelfTrainerCarousel from "../../components/selfTrainerCarousel/selfTrainerCarousel";
+import React from "react";
+// import { Link } from "react-router-dom";
 
-class selfTrainer extends Component {
-  render() {
-    return (
-      <div>
-          {/* <div className="row">
-          <div className="col-md-12">
-        <header>
-        <img id="banner" src="https://www.focusmaster.com/wp-content/uploads/2014/03/Focusmaster_Banners_05.jpg"></img>
-        </header>
-        </div>
-        </div> */}
-        
-        <Nav />
+// import "../../style.css"
 
-<<<<<<< HEAD
-        <div>
+const SelfTrainerCarousel = () => (
+  <div>
+    <div>
             <h1 id="header1"> Self Trainer Programs </h1>
             </div>
           <div className="row" id="div">
           <div id="backgorund" className="col-md-6">
-            <p id="script">-The self trainer is the ideal program for someone with a specific plan in mind.</p> <p  id="script">-These trainers are specific to a certain style of workout as well as the particular goals they are designed for.</p><p  id="script">-We have a bodybuilding, powerlifting as well as a circuit/HIIT trainer. Each customized to reach goals in that specific training style. </p>
+            <p id="script"> The self trainer is the ideal program for someone with a specific plan in mind.</p> <p  id="script">These trainers are specific to a certain style of workout as well as the particular goals they are designed for.</p><p  id="script"> We have a bodybuilding, powerlifting as well as a circuit/HIIT trainer. Each customized to reach goals in that specific training style. </p>
             
 
             <h3 id="DTT">-Bodybuilding Trainer <button id="purchase"className="btn btn-outline- ml-4" type="submit">
@@ -50,15 +37,7 @@ class selfTrainer extends Component {
       <div className="col-md-12">
           <h4 id="footer">"Become the version of you that you always wanted, stop sitting on the sidelines!"</h4>
           </div>
-=======
-        <SelfTrainerCarousel />
->>>>>>> 7d94a3f7cdfc85350be381495be4599d73f18c25
+  </div>
+);
 
-        </div>
-
-
-    );
-  }
-}
-
-export default selfTrainer;
+export default SelfTrainerCarousel;
