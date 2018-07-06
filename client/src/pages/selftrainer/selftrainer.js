@@ -21,7 +21,7 @@ class Selftrainer extends Component {
             </div>
           <div className="row" id="div">
           <div id="backgorund" className="col-md-6">
-            <p id="script"> The self trainer is the ideal program for someone with a specific plan in mind.</p> <p  id="script">These trainers are specific to a certain style of workout as well as the particular goals they are designed for.</p><p  id="script"> We have a bodybuilding, powerlifting as well as a circuit/HIIT trainer. Each customized to reach goals in that specific training style. </p>
+            <p id="script">-The self trainer is the ideal program for someone with a specific plan in mind.</p> <p  id="script">-These trainers are specific to a certain style of workout as well as the particular goals they are designed for.</p><p  id="script">-We have a bodybuilding, powerlifting as well as a circuit/HIIT trainer. Each customized to reach goals in that specific training style. </p>
             
 
             <h3 id="DTT">-Bodybuilding Trainer <button id="purchase"className="btn btn-outline- ml-4" type="submit">

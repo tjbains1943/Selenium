@@ -83,9 +83,11 @@ const Nav = props => (
             </div>
           </li>
           <li className="nav-item">
+          <Link to={"/VIP"}>
             <a id="simple" className="nav-link" href="">
               VIP
             </a>
+            </Link>
           </li>
           <li className="nav-item">
           <Link to={"/profile"}>
