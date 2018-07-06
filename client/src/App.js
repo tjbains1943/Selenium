@@ -3,6 +3,8 @@ import Home from "./pages/home/home";
 import Daily from "./pages/Daily/dailytrainer";
 import Profile from "./pages/profile/profile";
 import Selftrainer from "./pages/selftrainer/selftrainer";
+import VIP from "./pages/vip/vip";
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Signup from "./pages/signup/signup"
@@ -20,8 +22,13 @@ const App = () =>
       <Route exact path="/signup" component={Signup} />
       <Route exact path="/profile" component={Profile} />
       <Route exact path="/selftrainer" component={Selftrainer} />
+<<<<<<< HEAD
+      <Route exact path="/vip" component={VIP} />
+
+=======
       <Route exact path="/admin" component={Admin} />
       <Route exact path="/admin/vur" component={AdminView} />
+>>>>>>> 7d94a3f7cdfc85350be381495be4599d73f18c25
 
     </Switch>
     </Router>
