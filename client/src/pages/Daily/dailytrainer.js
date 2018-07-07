@@ -2,16 +2,17 @@ import React, { Component } from "react";
 import "./daily.css";
 import Nav from "../../components/Nav/Nav";
 import TableAPI from "../../utils/Table-API";
+import DisplayTable from "../../components/displayTable/displayTable";
 
 
 class Daily extends Component {
-
+  state={}
   saveUser = () => {
     console.log(123);
           TableAPI.getTables( {"weekStart": "2018-07-02"})
       .then(results => {
         console.log(results);
-        this.setState({results})
+        this.setState({results: results})
             })
       // .catch(err => console.log(err));
           }
@@ -20,7 +21,14 @@ class Daily extends Component {
       this.saveUser()
     }
 
+   componentDidUpdate(){
+     console.log(this.state.results.data[0].exercise[0].id);
+   }
+
   render() {
+    if (!this.state.results) {
+      return null;
+    }
     return (
       <div>
         <Nav />
@@ -34,6 +42,7 @@ class Daily extends Component {
             
 
             <h3 id="DT">-MENS DAILY TRAINER</h3>
+            <DisplayTable data={this.state.results.data[0].exercise[0].id}/>
             <h3 id="DT">-WOMENS DAILY TRAINER</h3>
             
             </div>
