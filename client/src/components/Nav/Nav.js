@@ -76,9 +76,11 @@ const Nav = props => (
                 Recipes
               </p>
               </Link>
+              <Link to={"/Food"}>
               <p className="dropdown-item m-0" href="">
                 Healthy Replacements
               </p>
+              </Link>
               <p className="dropdown-item m-0" href="">
                 Supplement Recommendations
               </p>
