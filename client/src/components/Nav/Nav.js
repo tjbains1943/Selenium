@@ -84,9 +84,9 @@ const Nav = props => (
           </li>
           <li className="nav-item">
           <Link to={"/VIP"}>
-            <a id="simple" className="nav-link" href="">
+            <p id="simple" className="nav-link m-0" href="">
               VIP
-            </a>
+            </p>
             </Link>
           </li>
           <li className="nav-item">

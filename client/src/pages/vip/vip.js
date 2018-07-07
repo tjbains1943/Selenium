@@ -27,7 +27,7 @@ class VIP extends Component {
             </div>
             
           <div className="col-md-6">
-          <img id="vippic" src="https://image.jimcdn.com/app/cms/image/transf/dimension=600x10000:format=jpg/path/s1683ea33217abdc8/image/i09c1dee7a9854923/version/1506686944/image.jpg"></img>
+          <img id="vippic" alt="pic" src="https://image.jimcdn.com/app/cms/image/transf/dimension=600x10000:format=jpg/path/s1683ea33217abdc8/image/i09c1dee7a9854923/version/1506686944/image.jpg"></img>
           
           </div>
 

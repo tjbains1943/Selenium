@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import TableAPI from "../../utils/Table-API";
 
 class Products extends Component {
+  state={};
   saveUser = () => {
     // console.log(123);
     let newUser = {
@@ -12,15 +13,10 @@ class Products extends Component {
     console.log(newUser);
           TableAPI
       .saveTable(newUser)
-      // .then(results => {
-      //   // console.log(results);
-      //   localStorage.setItem("token", results.data.token);
-      //   // return (
-      //     // alert("Your account has been created! Welcome to SimplyFIT, your one stop shop for fitness plans")
-      //     // window.location.href = '/profile'
-
-      // // )
-      //       })
+      .then(results => {
+        console.log(results);
+        this.setState({results})
+            })
       // .catch(err => console.log(err));
 
           }

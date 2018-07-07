@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./selftrainer.css";
 import Nav from "../../components/Nav/Nav";
-import SelfTrainerCarousel from "../../components/selfTrainerCarousel/selfTrainerCarousel";
+// import SelfTrainerCarousel from "../../components/selfTrainerCarousel/selfTrainerCarousel";
 
 class selfTrainer extends Component {
   render() {
