@@ -1,7 +1,8 @@
 
 
 #first1{
-    padding-top: 15%; 
+    padding-top: 15%;
+ 
     text-align: center;
     font-family: 'Oswald', sans-serif;
     font-size: 60px;
@@ -33,16 +34,10 @@
     /* padding-bottom: 35%; */
 }
 
-#second{
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    padding-bottom: 20%;
 
-}
 #second2{
-    padding-bottom: 35%;
-    text-align: center;
+    padding-bottom: 18%;
+  
     align-items: center;
     width: 100%;
 
@@ -50,7 +45,7 @@
 
 #third{
     padding-bottom: 33%;
-    padding-left: 270px;
+    padding-left: 290px;
 }
 
 #text{
@@ -64,4 +59,65 @@
 
 #title{
     font-size: 50px;
+}
+
+@media screen and (max-width: 1000px){
+
+    #about{
+        font-size: 15px;
+      
+        align-items: center;
+        width: 100%;
+
+    }
+
+    #about1{
+        font-size: 15px;
+      
+        align-items: center;
+        width: 100%;
+    }
+
+    #second2{
+        align-items: center;
+        width: 100%;
+    
+    }
+
+}
+@media screen and (max-width: 750px) {
+
+    #first1{
+        padding-top: 15%;
+     
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        font-size: 40px;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #first2{
+        text-align: center;
+        padding-top: 10%;
+        font-family: 'Oswald', sans-serif;
+        font-size: 15px;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #join{
+        align-items: center;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    #second2{
+        font-size: 10px;   
+        align-items: center;
+        width: 100%;
+    
+    }
+
+
 }
