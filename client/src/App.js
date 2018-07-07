@@ -5,6 +5,7 @@ import Profile from "./pages/profile/profile";
 import Selftrainer from "./pages/selftrainer/selftrainer";
 import VIP from "./pages/vip/vip";
 import Diet from "./pages/diet/diet";
+import Food from "./pages/food/food";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -25,6 +26,8 @@ const App = () =>
       <Route exact path="/selftrainer" component={Selftrainer} />
       <Route exact path="/vip" component={VIP} />
       <Route exact path="/diet" component={Diet} />
+      <Route exact path="/food" component={Food} />
+
       <Route exact path="/admin" component={Admin} />
       <Route exact path="/adminView" component={AdminView} />
 
