@@ -4,6 +4,7 @@ import Daily from "./pages/Daily/dailytrainer";
 import Profile from "./pages/profile/profile";
 import Selftrainer from "./pages/selftrainer/selftrainer";
 import VIP from "./pages/vip/vip";
+import Diet from "./pages/diet/diet";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -23,6 +24,7 @@ const App = () =>
       <Route exact path="/profile" component={Profile} />
       <Route exact path="/selftrainer" component={Selftrainer} />
       <Route exact path="/vip" component={VIP} />
+      <Route exact path="/diet" component={Diet} />
       <Route exact path="/admin" component={Admin} />
       <Route exact path="/adminView" component={AdminView} />
 

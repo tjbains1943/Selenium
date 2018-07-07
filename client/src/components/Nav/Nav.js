@@ -115,7 +115,7 @@ const Nav = props => (
                 onChange={props.onChange}
               />
               <input
-                id="log"
+                id="log2"
                 className="form-control "
                 name="password"
                 type="password"
