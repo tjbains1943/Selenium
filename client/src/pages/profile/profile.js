@@ -66,8 +66,7 @@ class Profile extends Component {
         </div>
         <div className="col-md-12">
           <h4 id="footer">
-            "Become the version of you that you always wanted, stop sitting on
-            the sidelines!"
+            Stop sitting on the sidelines! Become the version of you that you always wanted!
           </h4>
         </div>
       </div>

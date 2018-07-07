@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import "./daily.css";
+import "./diet.css";
 import Nav from "../../components/Nav/Nav";
 
-class Daily extends Component {
+class Diet extends Component {
   render() {
     return (
       <div>
@@ -38,4 +38,4 @@ class Daily extends Component {
   }
 }
 
-export default Daily;
+export default Diet;

@@ -20,7 +20,7 @@ const Carousel = () => (
           <h5 className="col-xs-12 col-centered" id="first1">Welcome To SimplyFIT</h5>
         </div>
         <div className="row">
-          <h4 className="col-xs-12" id="first2">"Everyday workouts for everyday people!"</h4>
+          <h4 className="col-xs-12" id="first2">Everyday workouts for everyday people!</h4>
         </div>
 
 
