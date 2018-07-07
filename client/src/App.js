@@ -22,13 +22,9 @@ const App = () =>
       <Route exact path="/signup" component={Signup} />
       <Route exact path="/profile" component={Profile} />
       <Route exact path="/selftrainer" component={Selftrainer} />
-<<<<<<< HEAD
       <Route exact path="/vip" component={VIP} />
-
-=======
       <Route exact path="/admin" component={Admin} />
-      <Route exact path="/admin/vur" component={AdminView} />
->>>>>>> 7d94a3f7cdfc85350be381495be4599d73f18c25
+      <Route exact path="/adminView" component={AdminView} />
 
     </Switch>
     </Router>

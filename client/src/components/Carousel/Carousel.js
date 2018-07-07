@@ -39,19 +39,7 @@ const Carousel = () => (
     
   
             </div>
-            <div className="carousel-item">
-              <img className="d-block w-100" src="http://www.mftsport.com/wp-content/uploads/2016/11/trx_functionaltrainingtools_pdp_miniband-min.jpg" alt="Second slide"></img>
-              <div className="carousel-caption d-xs-block">
-              <div className="row" id="second">
-              <div className="col-xs-12">
-                    <h5 >About:</h5>
-                    <p>SimplyFIT is designed for you to reach your fitness goals that youve always wanted to achieve. Its a centralized hub for everything fitness!</p>
-                    <p>We offer multiple options, our daily trainer as well as our self trainer. All of which were hand crafted by our professional fitness staff.</p>
-                    <p>Included within your memberships is access to videos of each excerise as well as dietary guidelines and supplement recommendations.</p>
-            </div>
-            </div>
-            </div>
-            </div>
+            
 
 
             <div className="carousel-item">
@@ -59,8 +47,19 @@ const Carousel = () => (
               <div className="carousel-caption d-xs-block">
               <div className="row">
               <div id="second2" className="col-xs-12">
-            <h5>About:</h5>
-            <p>SimplyFIT is designed for you reach your fitness goals that youve always wanted to achieve. Its a centralized hub for everything fitness! From our daily trainer where you can get new workouts every week to our dietary guidelines, we are here to help you reach your goals. Our professional fitness staff hand designs all of the workouts and they also work around the clock to design your custom VIP plan if thats the route you choose to go. You want fitness, come to SimplyFIT and lets get started!  </p>
+            <h5 id="about">About:</h5>
+            <p id="about1">SimplyFIT is designed for you reach your fitness goals that you have always wanted to achieve. Its a centralized hub for everything fitness!</p>
+            <h5 id="about">Features:</h5>
+            <p id="about1">-Daily Trainer</p>
+            <p id="about1">-Self Trainer</p>
+            <p id="about1">-Exercise Library</p>
+            <p id="about1">-Dietary Guide</p>
+            <p id="about1">-Supplement Recommendations</p>
+            <p id="about1">-Member Profile</p>
+            <p id="about1">-Progress Tracker</p>
+
+
+
             </div>
             </div>
             </div>
@@ -69,11 +68,11 @@ const Carousel = () => (
               <img className="d-block w-100" src="https://i.pinimg.com/originals/76/89/c5/7689c5513084cd3ae199cec4f9b84af3.jpg" alt="Third slide"></img>
               <div className="carousel-caption d-xs-block">
                   <div id="third">
-                  <h4 id="one">Customized Diet and Workout Plan</h4>  
+                  <h4 id="one">VIP Customized Diet and Workout Plan</h4>  
                   <p id="text">-Custom training plan written just for you!</p>
                   <p id="text">-Direct contact with a fitness professional!</p>  
                   <p id="text">-Custom diet plan designed for your specific goals!</p>         
-                  <p id="text">-Acess to dozens healthy recipes!</p>
+                  <p id="text">-Acess to dozens healthy recipes and our exercise library!</p>
                   </div>
                 </div>
             </div>

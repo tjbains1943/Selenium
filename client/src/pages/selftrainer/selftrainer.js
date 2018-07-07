@@ -17,7 +17,6 @@ class selfTrainer extends Component {
         
         <Nav />
 
-<<<<<<< HEAD
         <div>
             <h1 id="header1"> Self Trainer Programs </h1>
             </div>
@@ -50,9 +49,7 @@ class selfTrainer extends Component {
       <div className="col-md-12">
           <h4 id="footer">"Become the version of you that you always wanted, stop sitting on the sidelines!"</h4>
           </div>
-=======
-        <SelfTrainerCarousel />
->>>>>>> 7d94a3f7cdfc85350be381495be4599d73f18c25
+
 
         </div>
 

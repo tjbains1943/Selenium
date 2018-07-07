@@ -115,7 +115,7 @@ const Nav = props => (
                 onChange={props.onChange}
               />
               <input
-                id="log1"
+                id="log"
                 className="form-control "
                 name="password"
                 type="password"
@@ -128,7 +128,7 @@ const Nav = props => (
               </button>
               
               <Link to={"/signup"}>
-                <button className="btn btn-outline-grey ml-4" type="submit">
+                <button id="signIN" className="btn " type="submit">
                   Sign-Up
                 </button>
               </Link>
