@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import "../../style.css"
 
 const PricingCard = () => (
@@ -61,9 +62,12 @@ const PricingCard = () => (
                             <li>Access to Recipes</li>  
                             <li>Custom training and diet plan edited every 2 weeks</li>
                         </ul>
-                        <button type="button" className="btn pricingTable-signup" data-toggle="modal" data-target="#exampleModalCenter">
-        Order Now
-      </button>                    </div>
+                        <Link to={"/VIP"}>
+                        <button type="button" className="btn pricingTable-signup" data-target="#exampleModalCenter">
+        More Info
+      </button>  
+      </Link>  
+                      </div>
                 </div>
             </div>
         </div>
