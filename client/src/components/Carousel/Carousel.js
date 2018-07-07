@@ -10,7 +10,7 @@ const Carousel = () => (
           <div className="carousel-inner">
             <div className="carousel-item active">
             
-              <img className="d-block w-100" src="        https://i2.wp.com/newyoufitness.ie/wp-content/uploads/2016/06/Male-Fitness-Models-Background-Image1.jpg" alt="First slide"></img>
+              <img id="homepic1" className="d-block w-100" src="https://az616578.vo.msecnd.net/files/2016/08/15/636068214478452350268408799_160_people_working_out.jpg" alt="First slide"></img>
               
               
             
@@ -43,7 +43,7 @@ const Carousel = () => (
 
 
             <div className="carousel-item">
-              <img className="d-block w-100" src="https://www.crossfitdaedalus.com/wp-content/uploads/2015/04/Gym-Background1.png" alt="Second slide"></img>
+              <img id="homepic2" className="d-block w-100" src="http://www.mftsport.com/wp-content/uploads/2016/11/trx_functionaltrainingtools_pdp_miniband-min.jpg"></img>
               <div className="carousel-caption d-xs-block">
               <div className="row">
               <div id="second2" className="col-xs-12">
@@ -65,7 +65,7 @@ const Carousel = () => (
             </div>
             </div>
             <div className="carousel-item">
-              <img className="d-block w-100" src="https://i.pinimg.com/originals/76/89/c5/7689c5513084cd3ae199cec4f9b84af3.jpg" alt="Third slide"></img>
+              <img id="homepic2" className="d-block w-100" src="https://i.pinimg.com/originals/76/89/c5/7689c5513084cd3ae199cec4f9b84af3.jpg" alt="Third slide"></img>
               <div className="carousel-caption d-xs-block">
                   <div id="third">
                   <h4 id="one">VIP Customized Diet and Workout Plan</h4>  

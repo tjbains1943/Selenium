@@ -1,11 +1,3 @@
-body{
-    background-image: url("https://www.critica.com.pa/sites/default/files/imagenes/2016/07/27/cross.jpg"); 
-
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-}
 
 #header{
     padding-top: 20px;
@@ -17,12 +9,13 @@ body{
 
 }
 
-#script {
+#recipe {
+    text-align: center;
+    align-items: center;
     color: white;
-    padding-left: 60px;
-    text-indent: 14px;
+
     font-family: 'Oswald', sans-serif;
-    font-size: 20px;
+    font-size: 100px;
 
 }
 

@@ -71,9 +71,11 @@ const Nav = props => (
               className="dropdown-menu"
               aria-labelledby="navbarDropdownMenuLink"
             >
+            <Link to={"/Diet"}>
               <a className="dropdown-item" href="">
                 Recipes
               </a>
+              </Link>
               <a className="dropdown-item" href="">
                 Healthy Replacements
               </a>
