@@ -72,16 +72,16 @@ const Nav = props => (
               aria-labelledby="navbarDropdownMenuLink"
             >
             <Link to={"/Diet"}>
-              <a className="dropdown-item" href="">
+              <p className="dropdown-item m-0" href="">
                 Recipes
-              </a>
+              </p>
               </Link>
-              <a className="dropdown-item" href="">
+              <p className="dropdown-item m-0" href="">
                 Healthy Replacements
-              </a>
-              <a className="dropdown-item" href="">
+              </p>
+              <p className="dropdown-item m-0" href="">
                 Supplement Recommendations
-              </a>
+              </p>
             </div>
           </li>
           <li className="nav-item">
@@ -125,12 +125,12 @@ const Nav = props => (
                 aria-label="Search"
                 onChange={props.onChange}
               />
-              <button id="signIN" className="btn" onClick={props.onClick} type="submit">
+              <button className="signIN btn" onClick={props.onClick} type="submit">
                 Sign-In
               </button>
               
               <Link to={"/signup"}>
-                <button id="signIN" className="btn " type="submit">
+                <button className="signIN btn" type="submit">
                   Sign-Up
                 </button>
               </Link>

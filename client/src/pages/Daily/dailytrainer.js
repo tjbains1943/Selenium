@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./daily.css";
 import Nav from "../../components/Nav/Nav";
 import TableAPI from "../../utils/Table-API";
-import DisplayTable from "../../components/displayTable/displayTable";
 
 
 class Daily extends Component {
@@ -42,7 +41,25 @@ class Daily extends Component {
             
 
             <h3 id="DT">-MENS DAILY TRAINER</h3>
-            <DisplayTable data={this.state.results.data[0].exercise[0].id}/>
+            <button type="button" onClick={this.props.onRowAdd} className="btn btn-success pull-right">Add</button>
+              <table className="table table-bordered">
+                <thead>
+                  <tr>
+                    <th className="text-white">Exercise</th>
+                    <th className="text-white">Weight</th>
+                    <th className="text-white">Reps</th>
+                    <th className="text-white">Sets</th>
+                    <th className="text-white">Time between Sets(optional)</th>
+
+                  </tr>
+                </thead>
+      
+                <tbody className="text-white">
+                  {this.state.results.data[0].exercise[0].id}
+      
+                </tbody>
+      
+              </table>
             <h3 id="DT">-WOMENS DAILY TRAINER</h3>
             
             </div>

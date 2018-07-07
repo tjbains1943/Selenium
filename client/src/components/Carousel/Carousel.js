@@ -43,7 +43,7 @@ const Carousel = () => (
 
 
             <div className="carousel-item">
-              <img id="homepic2" className="d-block w-100" src="http://www.mftsport.com/wp-content/uploads/2016/11/trx_functionaltrainingtools_pdp_miniband-min.jpg"></img>
+              <img id="homepic2" className="d-block w-100" alt="pic" src="http://www.mftsport.com/wp-content/uploads/2016/11/trx_functionaltrainingtools_pdp_miniband-min.jpg"></img>
               <div className="carousel-caption d-xs-block">
               <div className="row">
               <div id="second2" className="col-xs-12">
