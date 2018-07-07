@@ -81,9 +81,11 @@ const Nav = props => (
                 Healthy Replacements
               </p>
               </Link>
+              <Link to={"/Supps"}>
               <p className="dropdown-item m-0" href="">
                 Supplement Recommendations
               </p>
+              </Link>
             </div>
           </li>
           <li className="nav-item">
