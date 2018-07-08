@@ -1,0 +1,46 @@
+#headerFood{
+    padding-bottom: 40px;
+    padding-top: 20px;
+    text-decoration: underline darkred;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+#recipe {
+    text-align: center;
+    align-items: center;
+    color: white;
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 100px;
+
+}
+
+#oats{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+#foodT{
+    color: white !important;
+    text-decoration: underline;
+}
+
+#foodP{
+    color: white !important;
+
+}
+
+#CB{
+}
+
+
+
+#omlette{
+    height: 300px;
+}
+

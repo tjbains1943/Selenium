@@ -78,13 +78,13 @@ class Home extends Component {
         <Nav onChange={this.handleInputChange} onClick={this.handleLogin} />
 
         <div className="row">
-          <div id="pics" className="col-md-10">
+          <div id="pics" className="col-md-11">
             <Carousel />
           </div>
         </div>
-        <div className="col-md-12">
+        {/* <div className="col-md-12">
           <h4 id="footer"> Stop sitting on the sidelines! Become the version of you that you always wanted!</h4>
-          </div>
+          </div> */}
       </div>
     );
   }

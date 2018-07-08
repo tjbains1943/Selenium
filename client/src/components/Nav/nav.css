@@ -26,13 +26,17 @@
 }
 
 #navs{
-    padding-top: 20px;
-    background-color: black;
+    padding-top: 10px;
+    background-color: #0e1b30;
 }
 
 .signIN{
     color: white;
     background-color:darkred;
     border-color: black;
+}
+
+#logo{
+    height:70px;
 }
 
