@@ -78,7 +78,7 @@ class Supps extends Component {
                 <img id="omlette" class="card-img-top" src="https://s7d2.scene7.com/is/image/VitaminShoppe/2014934_01?$OP_PDPSKU$" alt="Card image cap"></img>
                 <div id="CB" class="card-body text-white">
                     <h5 className="foodT">Pre-Workout</h5>
-                    <p className="foodP" >Great for energy as well as msucle building properties.</p>
+                    <p className="foodP" >Great for energy as well as muscle building properties.</p>
                 </div>
                 </div>
          

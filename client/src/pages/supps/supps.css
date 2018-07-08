@@ -27,7 +27,7 @@
 
 #foodT{
     color: white !important;
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 #foodP{

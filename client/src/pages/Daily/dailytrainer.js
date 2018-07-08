@@ -41,7 +41,7 @@ class Daily extends Component {
             
 
             <h3 id="DT">-MENS DAILY TRAINER</h3>
-            <button type="button" onClick={this.props.onRowAdd} className="btn btn-success pull-right">Add</button>
+            {/* <button type="button" onClick={this.props.onRowAdd} className="btn btn-success pull-right">Add</button>
               <table className="table table-bordered">
                 <thead>
                   <tr>
@@ -59,7 +59,7 @@ class Daily extends Component {
       
                 </tbody>
       
-              </table>
+              </table> */}
             <h3 id="DT">-WOMENS DAILY TRAINER</h3>
             
             </div>
