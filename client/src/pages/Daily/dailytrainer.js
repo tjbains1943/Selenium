@@ -41,8 +41,7 @@ class Daily extends Component {
             
 
             <h3 id="DT">-MENS DAILY TRAINER</h3>
-            <button type="button" onClick={this.props.onRowAdd} className="btn btn-success pull-right">Add</button>
-              <table className="table table-bordered">
+              {/* <table className="table table-bordered">
                 <thead>
                   <tr>
                     <th className="text-white">Exercise</th>
@@ -54,12 +53,27 @@ class Daily extends Component {
                   </tr>
                 </thead>
       
-                <tbody className="text-white">
-                  {this.state.results.data[0].exercise[0].id}
+                <tbody className="text-white"> */}
+
+                  {/* {this.state.results.data[0].exercise[0].id} */}
+                  {this.state.results.data.map((x) => (
+                    <div className="text-white"> {x.day}
+
+                      {x.exercise.map((y, num) => (
+                        <div> {`Exercise: ${num}    Name: ${y.name}  Weight:${y.Weight}    Sets:${y.Sets}  Reps:${y.Reps} time between:${y.time}`}</div>
+                
+                      )
+                    )
+                      }
+                      
+                      </div>
+                      
+                  )
+                )
+                }
+                {/* </tbody>
       
-                </tbody>
-      
-              </table>
+              </table> */}
             <h3 id="DT">-WOMENS DAILY TRAINER</h3>
             
             </div>
