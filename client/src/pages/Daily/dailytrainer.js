@@ -56,11 +56,11 @@ class Daily extends Component {
                 <tbody className="text-white"> */}
 
                   {/* {this.state.results.data[0].exercise[0].id} */}
-                  {this.state.results.data.map((x) => (
-                    <div className="text-white"> {x.day}
+                  {this.state.results.data.map((x, numb) => (
+                    <div key={numb} className="text-white"> {x.day}
 
                       {x.exercise.map((y, num) => (
-                        <div> {`Exercise: ${num}    Name: ${y.name}  Weight:${y.Weight}    Sets:${y.Sets}  Reps:${y.Reps} time between:${y.time}`}</div>
+                        <div key={num}> {`Exercise: ${num}    Name: ${y.name}  Weight:${y.Weight}    Sets:${y.Sets}  Reps:${y.Reps} time between:${y.time}`}</div>
                 
                       )
                     )
