@@ -12,6 +12,10 @@ class DailyTrainer extends Component {
       });
     };
   saveUser = () => {
+      if(!this.state.trainerType) {
+          alert("enter trainer type!")
+          return;
+      }
     console.log(123);
           TableAPI.getTable( 
         {"trainerType": this.state.trainerType},
