@@ -5,6 +5,9 @@ router.route("/")
   .get(dailyTrainersControllers.findAll)
   .post(dailyTrainersControllers.create);
 
+  router.route("/getTrainer")
+  .post(dailyTrainersControllers.findById);
+
 router
   .route("/:id")
   .get(dailyTrainersControllers.findById)

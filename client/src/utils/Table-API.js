@@ -2,12 +2,12 @@ import axios from "axios";
 
 export default {
   // Gets all users
-  getTables: function() {
-    return axios.get("/api/dailyTrainer");
+  getTables: function(data) {
+    return axios.get("/api/dailyTrainer", data);
   },
   // Gets the book with the given id
   getTable: function(user) {
-    return axios.post("/api/dailyTrainer/", user);
+    return axios.post("/api/dailyTrainer/getTrainer", user);
   },
   // Deletes the book with the given id
   deleteTable: function(id) {

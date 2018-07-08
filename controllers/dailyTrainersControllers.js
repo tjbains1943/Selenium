@@ -3,15 +3,17 @@ const db = require("../models/dailytrainers");
 // Defining methods for the booksController
 module.exports = {
   findAll: function(req, res) {
+    console.log(69);
     db.DailyTrainers
-      .find(req.query)
+      .find(req.body)
       // .sort({ date: -1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
   findById: function(req, res) {
+    console.log(987);
     db.DailyTrainers
-      .findById(req.params.id)
+      .find(req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },

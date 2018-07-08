@@ -1,8 +1,8 @@
 import React from "react"
 import Home from "./pages/home/home";
-import Daily from "./pages/Daily/dailytrainer";
+import Daily from "./pages/Daily/daily";
 import Profile from "./pages/profile/profile";
-import Selftrainer from "./pages/selftrainer/selftrainer";
+import SelfTrainer from "./pages/selftrainer/selftrainer";
 import VIP from "./pages/vip/vip";
 import Diet from "./pages/diet/diet";
 import Food from "./pages/food/food";
@@ -14,6 +14,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Signup from "./pages/signup/signup"
 import Admin from "./pages/admin/admin";
 import AdminView from "./pages/adminView/adminView";
+import DailyTrainer from "./pages/dailyTrainer/dailyTrainer";
 // import { differenceInCalendarISOYears } from "date-fns";
 
 
@@ -25,15 +26,16 @@ const App = () =>
       <Route exact path="/daily" component={Daily}/>
       <Route exact path="/signup" component={Signup} />
       <Route exact path="/profile" component={Profile} />
-      <Route exact path="/selftrainer" component={Selftrainer} />
+      <Route exact path="/selftrainer" component={SelfTrainer} />
       <Route exact path="/vip" component={VIP} />
       <Route exact path="/diet" component={Diet} />
       <Route exact path="/food" component={Food} />
       <Route exact path="/supps" component={Supps} />
 
-
       <Route exact path="/admin" component={Admin} />
       <Route exact path="/adminView" component={AdminView} />
+      <Route exact path="/dailyTrainer" component={DailyTrainer} />
+
 
     </Switch>
     </Router>

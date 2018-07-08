@@ -6,20 +6,29 @@ class Products extends Component {
   saveUser = () => {
     // console.log(123);
     let newUser = {
+      trainerType: this.props.trainerType,
       exercise: this.state.products,
       day: this.props.day,
       weekStart: this.props.weekStart
     }
+    if (!newUser.trainerType){
+      alert("Please enter trainerType")
+    } 
+
+    else if (!newUser.weekStart) { 
+      alert("Please enter the Monday of the week.")
+    }
+    else {
     console.log(newUser);
           TableAPI
       .saveTable(newUser)
       .then(results => {
         console.log(results);
-        this.setState({results})
             })
-      // .catch(err => console.log(err));
+      .catch(err => console.log(err));
 
           }
+        }
         constructor(props) {
           super(props);
       
@@ -171,7 +180,7 @@ class Products extends Component {
                 </tbody>
       
               </table>
-              <button className={this.props.className} onClick={this.props.onClick}>Submit</button>
+              <button type="button" className={this.props.className} onClick={this.props.onClick}>Submit</button>
             </div>
           );
       

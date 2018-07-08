@@ -38,8 +38,8 @@ const NavSignedIn = props => (
               className="dropdown-menu text-white "
               aria-labelledby="navbarDropdownMenuLink"
             >
-              <Link to={"/Daily"}>
-                <p className="dropdown-item m-0">Daily Trainer</p>
+              <Link to={"/dailyTrainer"}>
+                <p className="dropdown-item m-0">All Daily Trainers</p>
               </Link>
               <Link to={"/Selftrainer"}>
               <span className="dropdown-item m-0" href="">
