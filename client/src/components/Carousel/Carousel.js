@@ -27,7 +27,7 @@ const Carousel = () => (
         <div className="row">
           <div id="join" className="col-xs-12">
               <Link to={"/signup"}>       
-                <button  type="button" className="btn btn-black">
+                <button id="joinBtn" type="button" className="btn btn-white">
                     Join The Club/Become A Member!
                 </button>
               </Link>
