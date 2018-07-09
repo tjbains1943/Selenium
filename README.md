@@ -1,7 +1,7 @@
 
 # SimplyFit
 
-![](fit.png)
+!![alt text](fit.png)
 
 
 
