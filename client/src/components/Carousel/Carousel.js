@@ -47,9 +47,12 @@ const Carousel = () => (
               <div className="carousel-caption d-xs-block">
               <div className="row">
               <div id="second2" className="col-xs-12">
-            <h5 id="about">About:</h5>
-            <p id="about1">SimplyFIT is designed for you reach your fitness goals that you have always wanted to achieve. Its a centralized hub for everything fitness!</p>
+    
             <h5 id="about">Features:</h5>
+            </div>
+            </div>
+            <div className="row">
+              <div id="second3" className="col-xs-12">
             <p id="about1">-Daily Trainer</p>
             <p id="about1">-Self Trainer</p>
             <p id="about1">-Exercise Library</p>
@@ -57,15 +60,16 @@ const Carousel = () => (
             <p id="about1">-Supplement Recommendations</p>
             <p id="about1">-Member Profile</p>
             <p id="about1">-Progress Tracker</p>
-
-
-
             </div>
             </div>
+        
+
+
+
             </div>
             </div>
             <div className="carousel-item">
-              <img id="homepic2" className="d-block w-100" src="https://i.pinimg.com/originals/76/89/c5/7689c5513084cd3ae199cec4f9b84af3.jpg" alt="Third slide"></img>
+              <img id="homepic2" className="d-block w-100" src="https://image.freepik.com/free-photo/vegetables-with-circular-space_23-2147681447.jpg" alt="Third slide"></img>
               <div className="carousel-caption d-xs-block">
                   <div id="third">
                   <h4 id="one">VIP Customized Diet and Workout Plan</h4>  
@@ -76,8 +80,7 @@ const Carousel = () => (
                   </div>
                 </div>
             </div>
-          </div>
-          <a className="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <a className="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
             <span className="sr-only">Previous</span>
           </a>
@@ -85,11 +88,12 @@ const Carousel = () => (
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="sr-only">Next</span>
           </a>
-        </div> 
-     
-  
-     </div>
-  // </div>
+            </div>
+            </div>
+          </div>
+          
+
+ 
 );
 
 export default Carousel;

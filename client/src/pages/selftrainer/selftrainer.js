@@ -41,7 +41,7 @@ class selfTrainer extends Component {
             </div>
             
           <div className="col-md-6">
-          <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&h=350" alt="First slide"></img>
+          <img id="selfy" src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&h=350" alt="First slide"></img>
           
           </div>
 

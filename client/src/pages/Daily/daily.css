@@ -1,5 +1,5 @@
 body{
-    background-image: url("https://www.critica.com.pa/sites/default/files/imagenes/2016/07/27/cross.jpg"); 
+    background-image: url("https://www.artsfon.com/pic/201502/1280x800/artsfon.com-56384.jpg"); 
 
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -7,6 +7,9 @@ body{
         background-size: cover;
 }
 
+#dailypic{
+    width: 85%;
+}
 #header{
     padding-top: 20px;
     text-decoration: underline darkred;

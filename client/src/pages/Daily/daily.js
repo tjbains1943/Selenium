@@ -79,7 +79,7 @@ class Daily extends Component {
             </div>
             
           <div className="col-md-6">
-          <img src="http://anytime-deals.com/wp-content/uploads/2018/02/pexels-photo-414029.jpg" alt="First slide"></img>
+          <img id="dailypic" src="http://anytime-deals.com/wp-content/uploads/2018/02/pexels-photo-414029.jpg" alt="First slide"></img>
           
           </div>
 
