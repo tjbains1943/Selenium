@@ -1,6 +1,8 @@
 
 # SimplyFit
 
+![](fit.PNG)
+
 
 
 link dt to front-end
