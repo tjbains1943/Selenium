@@ -1,7 +1,7 @@
 
 # SimplyFit
 
-
+![alt-text](client/images/fit.png)
 
 link dt to front-end
 create tracker
