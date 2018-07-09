@@ -15,6 +15,7 @@ import Signup from "./pages/signup/signup"
 import Admin from "./pages/admin/admin";
 import AdminView from "./pages/adminView/adminView";
 import DailyTrainer from "./pages/dailyTrainer/dailyTrainer";
+import WorkoutTracker from "./pages/workoutTracker/workoutTracker";
 // import { differenceInCalendarISOYears } from "date-fns";
 
 
@@ -35,6 +36,7 @@ const App = () =>
       <Route exact path="/admin" component={Admin} />
       <Route exact path="/adminView" component={AdminView} />
       <Route exact path="/dailyTrainer" component={DailyTrainer} />
+      <Route exact path="/workoutTracker" component={WorkoutTracker} />
 
 
     </Switch>

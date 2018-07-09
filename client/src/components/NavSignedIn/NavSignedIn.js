@@ -77,20 +77,22 @@ const NavSignedIn = props => (
             </div>
           </li>
           <li className="nav-item">
-            <a id="simple" className="nav-link" href="">
-              VIP
-            </a>
+          <Link to={"/workoutTracker"}>
+            <p id="simple3" className="nav-link m-0 text-white">
+              Workout Tracker
+            </p>
+            </Link>
           </li>
           <li className="nav-item">
           <Link to={"/profile"}>
-            <p id="simple" className="nav-link m-0" href="">
+            <p id="simple" className="nav-link m-0">
               {`${props.name}'s profile`}
             </p>
             </Link>
           </li>
           <li>
           <Link to={"/"}>
-            <p id="simple1" className="nav-link m-0" href="" onClick={props.signOut}>
+            <p id="simple1" className="nav-link m-0" onClick={props.signOut}>
               Sign the f Out
             </p>
             </Link>
