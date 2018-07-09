@@ -9,7 +9,11 @@ body{
 
 #dailypic{
     width: 85%;
+  
+ 
+    box-shadow: black  15px 20px;
 }
+
 #header{
     padding-top: 20px;
     text-decoration: underline darkred;
@@ -56,3 +60,4 @@ body{
     font-family: 'Oswald', sans-serif;
 
 }
+
