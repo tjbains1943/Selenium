@@ -1,6 +1,8 @@
 
 # SimplyFit
 
+![alt-text](images/simplyFit.png)
+
 link dt to front-end
 create tracker
 create diet page
