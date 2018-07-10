@@ -6,19 +6,19 @@ import TableAPI from "../../utils/Table-API";
 
 class Daily extends Component {
   state={}
-  saveUser = () => {
-    console.log(123);
-          TableAPI.getTables( {"weekStart": "2018-07-02"})
-      .then(results => {
-        console.log(results);
-        this.setState({results: results})
-            })
-      // .catch(err => console.log(err));
-          }
+  // saveUser = () => {
+  //   console.log(123);
+  //         TableAPI.getTables( {"weekStart": "2018-07-02"})
+  //     .then(results => {
+  //       console.log(results);
+  //       this.setState({results: results})
+  //           })
+  //     // .catch(err => console.log(err));
+  //         }
     
-  componentWillMount() {
-      this.saveUser()
-    }
+  // componentWillMount() {
+  //     this.saveUser()
+  //   }
 
   //  componentDidUpdate(){
   //    console.log(this.state.results.data[0].exercise[0].id);
