@@ -56,6 +56,7 @@ class WorkoutTracker extends Component {
       return (
         <div className="text-white">
           <Nav />
+          <h1>Workout Tracker</h1>
           <h5 className="text-white">
             {this.state.results.data.map((x, numb) => (
               <div key={numb} className="text-white">
@@ -64,12 +65,14 @@ class WorkoutTracker extends Component {
                   <div className="bg-primary my-2" key={num}>
                     {`Exercise: ${num}    Name: ${y.name}  Weight:${y.Weight}`}
                     <div className="bg-secondary">
-                      {`Sets:${y.Sets} Reps:${y.Reps}`}
+                    
     {/* change 5 to y.Sets */}
                       {Array.apply(0, Array(parseInt(y.Sets))).map(function(x, i) {
                         return <RepsButton num={y.Reps} key={i}> {y.Reps}</RepsButton>;
                       })}
-                      {`time between:${y.time}`}
+
+                      <p className="float-right">{`Sets:${y.Sets} Reps:${y.Reps}`}
+                      {`time between:${y.time}`} </p>
                     </div>
                   </div>
                 ))}
