@@ -49,7 +49,7 @@ class Admin extends Component {
           <div className="col-md-9">
         <div>
           <h1 className="text-white"> Tuesday </h1>
-          <Products weekStart={this.state.weekStart} day="Tuesday" />
+          <Products weekStart={this.state.weekStart} trainerType={this.state.trainerType} day="Tuesday" />
         </div>
         </div>
           </div>
@@ -58,7 +58,7 @@ class Admin extends Component {
           <div className="col-md-9">
         <div>
           <h1 className="text-white"> Wednesday </h1>
-          <Products weekStart={this.state.weekStart} day="Wednesday" />
+          <Products weekStart={this.state.weekStart} trainerType={this.state.trainerType} day="Wednesday" />
         </div>
         </div>
         </div>
@@ -67,7 +67,7 @@ class Admin extends Component {
           <div className="col-md-9">
         <div>
           <h1 className="text-white"> Thursday </h1>
-          <Products weekStart={this.state.weekStart} day="Thursday" />
+          <Products weekStart={this.state.weekStart} trainerType={this.state.trainerType} day="Thursday" />
         </div>
         </div>
         </div>
@@ -76,7 +76,7 @@ class Admin extends Component {
           <div className="col-md-9">
         <div>
           <h1 className="text-white"> Friday </h1>
-          <Products weekStart={this.state.weekStart} day="Friday" />
+          <Products weekStart={this.state.weekStart} trainerType={this.state.trainerType} day="Friday" />
         </div>
         </div>
         </div>
@@ -86,7 +86,7 @@ class Admin extends Component {
           <div className="col-md-9">
         <div>
           <h1 className="text-white"> Saturday </h1>
-          <Products weekStart={this.state.weekStart} day="Saturday" />
+          <Products weekStart={this.state.weekStart} trainerType={this.state.trainerType} day="Saturday" />
         </div>
         </div>
         </div>
@@ -95,7 +95,7 @@ class Admin extends Component {
         <div className="col-md-9">
         <div>
           <h1 className="text-white"> Sunday </h1>
-          <Products weekStart={this.state.weekStart} day="Sunday" />
+          <Products weekStart={this.state.weekStart} trainerType={this.state.trainerType} day="Sunday" />
         </div>
         </div>
         </div>
