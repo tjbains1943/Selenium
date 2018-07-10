@@ -15,7 +15,7 @@ class WorkoutTracker extends Component {
   };
   saveUser = () => {
     if (!this.state.trainerType) {
-      alert("enter trainer type!");
+      alert("Please enter trainer type!");
       return;
     }
     console.log(123);
@@ -66,8 +66,8 @@ class WorkoutTracker extends Component {
                     <div className="bg-secondary">
                       {`Sets:${y.Sets} Reps:${y.Reps}`}
     {/* change 5 to y.Sets */}
-                      {Array.apply(0, Array(5)).map(function(x, i) {
-                        return <RepsButton className="btn btn-white mx-2" key={i}> {`Reps:${y.Reps}`}</RepsButton>;
+                      {Array.apply(0, Array(parseInt(y.Sets))).map(function(x, i) {
+                        return <RepsButton num={y.Reps} key={i}> {y.Reps}</RepsButton>;
                       })}
                       {`time between:${y.time}`}
                     </div>
