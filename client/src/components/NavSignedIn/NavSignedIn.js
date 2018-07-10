@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const NavSignedIn = props => (
   <div>
     <nav id="navs" className="navbar navbar-expand-lg navbar-light bg-black">
-    <img id="logo" src="cliet/logo/logo.png"> </img>
+    {/* <img id="logo" src="cliet/logo/logo.png"> </img> */}
       <p className="navbar-brand" href="" />
       <button
         className="navbar-toggler bg-white"
@@ -77,11 +77,6 @@ const NavSignedIn = props => (
             </div>
           </li>
           <li className="nav-item">
-          <Link to={"/workoutTracker"}>
-            <p id="simple3" className="nav-link m-0 text-white">
-              Workout Tracker
-            </p>
-            </Link>
           </li>
           <li className="nav-item">
           <Link to={"/profile"}>
