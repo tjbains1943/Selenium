@@ -47,6 +47,7 @@ class Daily extends Component {
       <div className="row">
       <div className="col-md-6">
       <h3 id="DT">-MENS DAILY TRAINER</h3>
+      <h3 id="DT">-WOMENS DAILY TRAINER</h3>
               {/* <table className="table table-bordered">
                 <thead>
                   <tr>
@@ -68,8 +69,7 @@ class Daily extends Component {
       
               </table> */}
               </div>
-          <div className="col-md-6">
-            <h3 id="DT">-WOMENS DAILY TRAINER</h3>
+          
             {/* <table className="table table-bordered">
                 <thead>
                   <tr>
@@ -90,7 +90,7 @@ class Daily extends Component {
                 {/* </tbody>
       
               </table> */}
-            </div>
+            
       
       </div>
       <div className="col-md-12">
