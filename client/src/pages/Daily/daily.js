@@ -63,21 +63,7 @@ class Daily extends Component {
 
                   {/* {this.state.results.data[0].exercise[0].id} */}
                   
-                  {this.state.results.data.map((x, numb) => (
-                    <div key={numb} className="text-white"> {x.day}
 
-                      {x.exercise.map((y, num) => (
-                        <div key={num}> {`Exercise: ${num}    Name: ${y.name}  Weight:${y.Weight}    Sets:${y.Sets}  Reps:${y.Reps} time between:${y.time}`}</div>
-                
-                      )
-                    )
-                      }
-                      
-                      </div>
-                      
-                  )
-                )
-                }
                 {/* </tbody>
       
               </table> */}
@@ -100,21 +86,7 @@ class Daily extends Component {
 
                   {/* {this.state.results.data[0].exercise[0].id} */}
                   
-                  {this.state.results.data.map((x, numb) => (
-                    <div key={numb} className="text-white"> {x.day}
-
-                      {x.exercise.map((y, num) => (
-                        <div key={num}> {`Exercise: ${num}    Name: ${y.name}  Weight:${y.Weight}    Sets:${y.Sets}  Reps:${y.Reps} time between:${y.time}`}</div>
-                
-                      )
-                    )
-                      }
-                      
-                      </div>
-                      
-                  )
-                )
-                }
+      
                 {/* </tbody>
       
               </table> */}
