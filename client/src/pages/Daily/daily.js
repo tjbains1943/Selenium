@@ -2,29 +2,11 @@ import React, { Component } from "react";
 import "./daily.css";
 import Nav from "../../components/Nav/Nav";
 import { Link } from "react-router-dom";
-import TableAPI from "../../utils/Table-API";
 
 
 class Daily extends Component {
   state={}
-  // saveUser = () => {
-  //   console.log(123);
-  //         TableAPI.getTables( {"weekStart": "2018-07-02"})
-  //     .then(results => {
-  //       console.log(results);
-  //       this.setState({results: results})
-  //           })
-  //     // .catch(err => console.log(err));
-  //         }
-    
-  // componentWillMount() {
-  //     this.saveUser()
-  //   }
-
-  //  componentDidUpdate(){
-  //    console.log(this.state.results.data[0].exercise[0].id);
-  //  }
-
+  
   render() {
     return (
       <div>

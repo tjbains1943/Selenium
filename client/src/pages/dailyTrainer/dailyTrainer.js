@@ -67,7 +67,7 @@ class WorkoutTracker extends Component {
                     <div className="bg-secondary">
                     
     {/* change 5 to y.Sets */}
-                      {Array.apply(0, Array(parseInt(y.Sets))).map(function(x, i) {
+                      {Array.apply(0, Array(parseInt(y.Sets, 10))).map(function(x, i) {
                         return <RepsButton num={y.Reps} key={i}> {y.Reps}</RepsButton>;
                       })}
 
