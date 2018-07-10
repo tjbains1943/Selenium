@@ -6,7 +6,7 @@ import Nav from "../../components/Nav/Nav";
 class selfTrainer extends Component {
   render() {
     return (
-      <div>
+      <div className="selfT" >
           {/* <div className="row">
           <div className="col-md-12">
         <header>
@@ -16,7 +16,7 @@ class selfTrainer extends Component {
         </div> */}
         
         <Nav />
-
+        <div id="backdrop">
         <div>
             <h1 id="header1"> Self Trainer Programs </h1>
             </div>
@@ -50,7 +50,7 @@ class selfTrainer extends Component {
           <h4 id="footer">Stop sitting on the sidelines! Become the version of you that you always wanted!</h4>
           </div>
 
-
+          </div>
         </div>
 
 

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Nav from "../../components/Nav/Nav";
 import TableAPI from "../../utils/Table-API";
+import "./dailyTrainer.css";
+
 import RepsButton from "../../components/repsButton/repsButton";
 
 class WorkoutTracker extends Component {

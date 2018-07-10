@@ -5,9 +5,9 @@ import Nav from "../../components/Nav/Nav";
 class Supps extends Component {
   render() {
     return (
-      <div>
+      <div className="Sups">
         <Nav />
-
+        <div id="backdrop">
         <div>
             <h1 id="headerFood">Supplement Recommendations</h1>
             </div>
@@ -113,7 +113,7 @@ class Supps extends Component {
       </div>
       
       
-
+        </div>
 
         </div>
 
