@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const NavSignedIn = props => (
   <div>
     <nav id="navs" className="navbar navbar-expand-lg navbar-light bg-black">
-    <img id="logo" src="https://www.freelogoservices.com/api/main/images/1j+ojl1KOMkX9WyofBe43D6kivOHpBVInhjEwXs1M3EMoAJtlSMtgvVq8v8z" alt="First slide"></img>
+    <img id="logo" src="cliet/logo/logo.png"> </img>
       <p className="navbar-brand" href="" />
       <button
         className="navbar-toggler bg-white"

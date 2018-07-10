@@ -94,7 +94,7 @@ class Food extends Component {
                 <img id="omlette" class="card-img-top" src="http://www.adorndanceandart.com/uploads/5/2/9/6/52966941/s197082391318440730_p16_i5_w525.jpeg" alt="Card image cap"></img>
                 <div id="CB" class="card-body text-white">
                     <h5 className="foodT">Dinner</h5>
-                    <p className="foodP" >Try to avoid ordering out, grill up a few nights worth of food so you always have meals ready!</p>
+                    <p className="foodP" >Try to avoid ordering out, grill up a few nights worth of food to have ready!</p>
                 </div>
                 </div>
          
