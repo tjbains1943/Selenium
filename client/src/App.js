@@ -1,6 +1,5 @@
 import React from "react"
 import Home from "./pages/home/home";
-import Daily from "./pages/Daily/daily";
 import Profile from "./pages/profile/profile";
 import SelfTrainer from "./pages/selftrainer/selftrainer";
 import VIP from "./pages/vip/vip";
@@ -10,6 +9,7 @@ import Supps from "./pages/supps/supps";
 
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Daily from "./pages/Daily/daily";
 
 import Signup from "./pages/signup/signup"
 import Admin from "./pages/admin/admin";
@@ -23,6 +23,7 @@ const App = () =>
   <div>
     <Router>
     <Switch>
+      
       <Route exact path="/" component={Home} />
       <Route exact path="/daily" component={Daily}/>
       <Route exact path="/signup" component={Signup} />

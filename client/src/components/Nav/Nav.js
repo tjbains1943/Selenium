@@ -47,7 +47,7 @@ const Nav = props => (
               className="dropdown-menu text-white "
               aria-labelledby="navbarDropdownMenuLink"
             >
-              <Link to={"/Daily"}>
+              <Link to={"/daily"}>
                 <p className="dropdown-item m-0">Daily Trainer</p>
               </Link>
               <Link to={"/Selftrainer"}>
