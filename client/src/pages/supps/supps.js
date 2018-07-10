@@ -44,8 +44,9 @@ class Supps extends Component {
          
             
          </div>
+         </div>
          <div className="col-md-3">
-                </div>
+           
          <div class="card" >
                 <img id="omlette" class="card-img-top" src="https://s3.images-iherb.com/sre/sre01027/l/3.jpg" alt="Card cap"></img>
                 <div id="CB" class="card-body text-white">
