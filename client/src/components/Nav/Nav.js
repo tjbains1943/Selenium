@@ -8,7 +8,7 @@ const Nav = props => (
   <div>
   
     <nav id="navs" className="navbar navbar-expand-lg navbar-light bg-black">
-    <img id="logo" src="https://dl-mail.ymail.com/ws/download/mailboxes/@.id==VjN-fPjCGYf9TcvfzgwUsDgxQGJNJ6CDvfs0ugenaBvhpbMXP2zTf54Is2v5M79lLJvs6F676llwJijNHGM9Rx73ng/messages/@.id==AO0bn4lIraw5W0EgwACE0HcHEKo/content/parts/@.id==2/raw?appid=YMailNorrin&ymreqid=96d8bd1c-1d91-8c48-1c88-3b0004010300&token=zitEzqOML3j84e6ealFTT5U7-km5qEQF52lp7AcCuBYvtT4rK7pIV-LAtLWr2B88uR-LM3aIgX_3Wyym3t7PFNDRuj2Dppy7PsXS_X6njKIGYHG5zZROOYeWZBW-NzAx" ></img>
+    <img id="logo" src="https://dl-mail.ymail.com/ws/download/mailboxes/@.id==VjN-fPjCGYf9TcvfzgwUsDgxQGJNJ6CDvfs0ugenaBvhpbMXP2zTf54Is2v5M79lLJvs6F676llwJijNHGM9Rx73ng/messages/@.id==AO0bn4lIraw5W0EgwACE0HcHEKo/content/parts/@.id==2/raw?appid=YMailNorrin&ymreqid=96d8bd1c-1d91-8c48-1c88-3b0004010300&token=zitEzqOML3j84e6ealFTT5U7-km5qEQF52lp7AcCuBYvtT4rK7pIV-LAtLWr2B88uR-LM3aIgX_3Wyym3t7PFNDRuj2Dppy7PsXS_X6njKIGYHG5zZROOYeWZBW-NzAx" alt="" ></img>
       <p className="navbar-brand" href="" />
       <button
         className="navbar-toggler bg-white"
