@@ -18,7 +18,7 @@ const Carousel = () => (
     
     <div  id="button" className="carousel-caption d-xs-block">
         <div className="row row-centered">
-          <h5 className="col-xs-12 col-centered" id="first1">Welcome To SimplyFIT</h5>
+          <h5 className="col-xs-12 col-centered" id="first1">Welcome to SimplyFIT</h5>
         </div>
         <div className="row">
           <h4 className="col-xs-12" id="first2">Everyday workouts for everyday people!</h4>
@@ -70,7 +70,7 @@ const Carousel = () => (
             </div>
             </div>
             <div className="carousel-item">
-              <img id="homepic2" className="d-block w-100" src="https://image.freepik.com/free-photo/vegetables-with-circular-space_23-2147681447.jpg" alt="Third slide"></img>
+              <img id="homepic3" className="d-block w-100" src="https://image.freepik.com/free-photo/vegetables-with-circular-space_23-2147681447.jpg" alt="Third slide"></img>
               <div className="carousel-caption d-xs-block">
                   <div id="third">
                   <h4 id="one">VIP Customized Diet and Workout Plan</h4>  

@@ -1,11 +1,31 @@
+.selfT{
+
+    background-color: rgb(2, 3, 53);
+background-image: url(./Logo.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 570px, 320px;
+background-attachment: fixed;
+
+
+    /* background-image: url("http://www.toca-ch.com/data/walls/34/22320504.jpg"); 
+
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-attachment: fixed; */
+}
+
 
 #header1{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
+    padding-top: 40px;
+    padding-left: 60px;
+    
     color: white ;
-    font-size: 60px;
-    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'Audiowide', cursive;
     text-decoration: underline darkred;
 
 }
@@ -22,9 +42,10 @@
         
         color: white;
         padding-left: 60px;
+        font-size: 20px;
         padding-top: 20px;
         text-decoration: underline;
-        font-family: 'Oswald', sans-serif;
+        font-family: 'Audiowide', cursive;
     
 }
 
@@ -40,6 +61,8 @@
 
 #purchase{
     background-color: darkred;
+    font-family: 'Oswald', sans-serif;
+
     color:white;
 
 }
