@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./daily.css";
 import Nav from "../../components/Nav/Nav";
+import { Link } from "react-router-dom";
 import TableAPI from "../../utils/Table-API";
 
 
@@ -46,8 +47,12 @@ class Daily extends Component {
       </div>
       <div className="row">
       <div className="col-md-6">
+      <Link to={"/DailyTrainer"}>
       <h3 id="DT">-MENS DAILY TRAINER</h3>
+      </Link>
+      <Link to={"/DailyTrainer"}>
       <h3 id="DT">-WOMENS DAILY TRAINER</h3>
+      </Link>
               {/* <table className="table table-bordered">
                 <thead>
                   <tr>

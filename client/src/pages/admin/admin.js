@@ -37,32 +37,67 @@ class Admin extends Component {
             placeholder="Week Start dd/mm/yy"
           />
 
+
+          <div className="row">
+          <div className="col-md-9">
           <h1 className="text-white"> Monday </h1>
           <Products weekStart={this.state.weekStart} trainerType={this.state.trainerType} day="Monday" />
+          </div>
+          </div>
         </div>
+        <div className="row">
+          <div className="col-md-9">
         <div>
           <h1 className="text-white"> Tuesday </h1>
           <Products weekStart={this.state.weekStart} day="Tuesday" />
         </div>
+        </div>
+          </div>
+
+          <div className="row">
+          <div className="col-md-9">
         <div>
           <h1 className="text-white"> Wednesday </h1>
           <Products weekStart={this.state.weekStart} day="Wednesday" />
         </div>
+        </div>
+        </div>
+
+        <div className="row">
+          <div className="col-md-9">
         <div>
           <h1 className="text-white"> Thursday </h1>
           <Products weekStart={this.state.weekStart} day="Thursday" />
         </div>
+        </div>
+        </div>
+
+        <div className="row">
+          <div className="col-md-9">
         <div>
           <h1 className="text-white"> Friday </h1>
           <Products weekStart={this.state.weekStart} day="Friday" />
         </div>
+        </div>
+        </div>
+
+
+          <div className="row">
+          <div className="col-md-9">
         <div>
           <h1 className="text-white"> Saturday </h1>
           <Products weekStart={this.state.weekStart} day="Saturday" />
         </div>
+        </div>
+        </div>
+
+       <div className="row">
+        <div className="col-md-9">
         <div>
           <h1 className="text-white"> Sunday </h1>
           <Products weekStart={this.state.weekStart} day="Sunday" />
+        </div>
+        </div>
         </div>
         </form>
       </div>

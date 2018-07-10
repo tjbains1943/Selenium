@@ -52,7 +52,7 @@ const NavSignedIn = props => (
            
             </div>
           </li>
-          <li className="nav-item dropdown">
+          {/* <li className="nav-item dropdown">
             <a
               className="nav-link dropdown-toggle text-white"
               href=""
@@ -77,7 +77,7 @@ const NavSignedIn = props => (
                 Supplement Recommendations
               </a>
             </div>
-          </li>
+          </li> */}
           <li className="nav-item">
           </li>
           <li className="nav-item">
@@ -90,7 +90,7 @@ const NavSignedIn = props => (
           <li>
           <Link to={"/"}>
             <p id="simple1" className="nav-link m-0" onClick={props.signOut}>
-              Sign the f Out
+              SignOut
             </p>
             </Link>
             </li>

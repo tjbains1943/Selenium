@@ -109,8 +109,9 @@ class WorkoutTracker extends Component {
             onClick={this.saveUser}
             className="btn btn-danger py-1 px-5 mt-3 d-block"
           >
-            Submit
+            Begin Workout
           </button>
+
           {this.state.results.data.map((x, numb) => (
             <div key={numb} className="text-white">
               {" "}
@@ -126,12 +127,16 @@ class WorkoutTracker extends Component {
             </div>
           ))}
 
+            <div className="row">
+          <div className="col-md-6">
           <button
             onClick={this.beginWorkout}
-            className="btn btn-block btn-white py-1 px-5 mt-3 d-block"
+            className="btn btn-block btn-danger py-1 px-5 mt-3 d-block"
           >
             <strong>Begin Workout!</strong>
           </button>
+          </div>
+          </div>
         </div>
       );
     } else {

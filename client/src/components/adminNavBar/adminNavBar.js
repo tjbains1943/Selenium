@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const AdminNavBar = props => (
   <div>
     <nav id="navs" className="navbar navbar-expand-lg navbar-light bg-black">
-    <img id="logo" src="https://www.freelogoservices.com/api/main/images/1j+ojl1KOMkX9WyofBe43D6kivOHpBVInhjEwXs1M3EMoAJtlSMtgvVq8v8z" alt="First slide"></img>
+    <img id="logo" src="https://www.freelogoservices.com/api/main/images/1j+ojl1KOMkX9WyofBe43D6kivCApRBHnRzJwXs1M3EMoAJtlSMshPZr...fw8" alt="First slide"></img>
       <p className="navbar-brand" href="" />
       <button
         className="navbar-toggler bg-white"
