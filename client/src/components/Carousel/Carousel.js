@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const Carousel = () => (
   <div>
    {/* {/* <div class="style"> */}
+   
         
         <div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">
           <div className="carousel-inner">
