@@ -21,7 +21,7 @@ export default class RepsButton extends Component {
   }
     componentWillMount() {
       this.setState({
-        num : parseInt(this.props.num) + 1,
+        num : (parseInt(this.props.num, 10) + 1),
         original : this.props.num
       })
     }
