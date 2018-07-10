@@ -41,5 +41,11 @@
 #purchase{
     background-color: darkred;
     color:white;
-    border-color: white;
+
+}
+
+#selfy{
+    width: 80%;
+    box-shadow: black  15px 20px;
+
 }
