@@ -9,11 +9,11 @@ class Daily extends Component {
   
   render() {
     return (
-      <div>
+      <div className="daily">
         <Nav />
-
+        <div id="backdrop">
         <div>
-            <h1 id="header"> Daily Trainer </h1>
+            <h1 id="headerD"> Daily Trainer </h1>
             </div>
           <div className="row" id="div">
           <div id="backgorund" className="col-md-6">
@@ -82,6 +82,8 @@ class Daily extends Component {
       </div>
       <div className="col-md-12">
           <h4 id="footer">Stop sitting on the sidelines! Become the version of you that you always wanted!</h4>
+          </div>
+
           </div>
 
         </div>

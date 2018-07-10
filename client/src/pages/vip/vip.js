@@ -5,12 +5,11 @@ import Nav from "../../components/Nav/Nav";
 class VIP extends Component {
   render() {
     return (
-      <div>
+      <div className="vipP">
         <Nav />
-
+        <div id="backdrop">
         <div id="VIPs">
-            <h1 id="header"> VIP </h1>
-            <h3 id="header2">1 on 1 Custom Training Program</h3>
+            <h1 id="headerV"> VIP 1 on 1 Custom Training Program </h1>
             </div>
           <div className="row" id="div">
           <div id="backgorund" className="col-md-6">
@@ -45,7 +44,7 @@ class VIP extends Component {
       <div className="col-md-12">
           <h4 id="footer">Stop sitting on the sidelines! Become the version of you that you always wanted!</h4>
           </div>
-
+        </div>
         </div>
 
 

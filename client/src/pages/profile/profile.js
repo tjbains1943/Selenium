@@ -35,7 +35,7 @@ class Profile extends Component {
 
   render() {     
     return (
-      <div>
+      <div className="Prof">
         <NavSignedIn 
         name={this.state.display}
         signOut={this.SignOut}
