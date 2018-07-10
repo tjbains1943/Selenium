@@ -67,12 +67,11 @@ class WorkoutTracker extends Component {
                     <div className="bg-secondary">
                     
     {/* change 5 to y.Sets */}
-                      {Array.apply(0, Array(parseInt(y.Sets))).map(function(x, i) {
+                      {Array.apply(0, Array(parseInt(y.Sets, 10))).map(function(x, i) {
                         return <RepsButton num={y.Reps} key={i}> {y.Reps}</RepsButton>;
                       })}
 
-                      <p className="float-right">{`Sets:${y.Sets} Reps:${y.Reps}`}
-                      {`time between:${y.time}`} </p>
+                      <p className="float-right">{`Sets:${y.Sets} Reps:${y.Reps} time between Sets:${y.time}`} </p>
                     </div>
                   </div>
                 ))}
@@ -112,7 +111,7 @@ class WorkoutTracker extends Component {
             onClick={this.saveUser}
             className="btn btn-danger py-1 px-5 mt-3 d-block"
           >
-            Begin Workout
+          View
           </button>
 
           {this.state.results.data.map((x, numb) => (
@@ -161,7 +160,7 @@ class WorkoutTracker extends Component {
             onClick={this.saveUser}
             className="btn-danger py-1 px-5 mt-3 d-block"
           >
-            Submit
+            View
           </button>
         </div>
       );
