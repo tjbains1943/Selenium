@@ -78,7 +78,7 @@ class Home extends Component {
         <Nav onChange={this.handleInputChange} onClick={this.handleLogin} />
 
         <div className="row">
-          <div id="pics" className="col-md-11">
+          <div id="pics" className="col-md-12">
             <Carousel />
           </div>
         </div>
