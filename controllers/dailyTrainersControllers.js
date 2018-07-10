@@ -1,10 +1,9 @@
-const db = require("../models/dailytrainers");
+const db = require("../models");
 
 // Defining methods for the booksController
 module.exports = {
   findAll: function(req, res) {
-    console.log(69);
-    db.DailyTrainers
+    db.DailyTrainer
       .find(req.body)
       // .sort({ date: -1 })
       .then(dbModel => res.json(dbModel))
@@ -12,13 +11,13 @@ module.exports = {
   },
   findById: function(req, res) {
     console.log(987);
-    db.DailyTrainers
+    db.DailyTrainer
       .find(req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
   create: function(req, res) {
-    db.DailyTrainers
+    db.DailyTrainer
       .create(req.body)
       .then(dbModel => {
         console.log(dbModel);
@@ -26,13 +25,13 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   update: function(req, res) {
-    db.DailyTrainers
+    db.DailyTrainer
       .findOneAndUpdate({ _id: req.params.id }, req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
   remove: function(req, res) {
-    db.DailyTrainers
+    db.DailyTrainer
       .findById({ _id: req.params.id })
       .then(dbModel => dbModel.remove())
       .then(dbModel => res.json(dbModel))

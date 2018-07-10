@@ -1,4 +1,4 @@
-const db = require("../models/users");
+const db = require("../models");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 
@@ -10,15 +10,13 @@ module.exports = {
     db.Users.findOne({ email: req.body.email })
       .then(dbModel => {
         if (dbModel) {
-          console.log(dbModel);
+          // console.log(dbModel);
           if (bcrypt.compare(req.body.password, dbModel.password)) {
-            console.log("walla");
             var token = jwt.sign({ data: dbModel }, "secret");
             res.json({ token, name: "hellow" });
           }
         } 
         else {
-          console.log(987);
           res.json({ userStatus: "User Not Found" });
         }
       })
@@ -30,14 +28,12 @@ module.exports = {
     }
     var decoded = jwt.verify(req.body.headers.Authorization, "secret");
     
-    console.log(decoded.data.firstName);
+    // console.log(decoded.data.firstName);
     db.Users.findOne({ firstName: decoded.data.firstName })
       .then(dbModel => {
         if (dbModel) {
-          console.log(123);
           res.json(dbModel);
         } else {
-          console.log(321);
           res.json({ response: "no bueno" });
         }
       })
@@ -51,13 +47,13 @@ module.exports = {
   create: async function(req, res) {
     const hash = await bcrypt.hash(req.body.password, 10);
     req.body.password = hash;
-    console.log(req.body);
+    // console.log(req.body);
     db.Users.create(req.body)
       .then(dbModel => {
         console.log(dbModel);
         var token = jwt.sign({ data: dbModel }, "secret");
         res.json({ token, dbModel });
-        console.log(token);
+        // console.log(token);
       })
       .catch(err => res.status(422).json(err));
   },
