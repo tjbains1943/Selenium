@@ -28,7 +28,7 @@ export default class RepsButton extends Component {
 
     render() {
       return (
-         <button className="btn m-2 btn-primary" style={{borderRadius: "50%", width: "5%" }} onClick={this.buttonClicker}>{this.state.truthy ? (this.state.num) : "SxF"}</button>
+         <button className="btn m-2 btn-primary" style={{borderRadius: "50%", width: "6%" }} onClick={this.buttonClicker}>{this.state.truthy ? (this.state.num) : "SxF"}</button>
       
       );
     }

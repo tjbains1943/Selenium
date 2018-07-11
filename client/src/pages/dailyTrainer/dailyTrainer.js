@@ -4,6 +4,7 @@ import TableAPI from "../../utils/Table-API";
 import "./dailyTrainer.css";
 
 import RepsButton from "../../components/repsButton/repsButton";
+import WorkoutAPI from "../../utils/Workout-API";
 
 class WorkoutTracker extends Component {
   state = {
@@ -40,6 +41,7 @@ class WorkoutTracker extends Component {
   };
   logWorkout = () => {
     console.log(68);
+    // WorkoutAPI.saveWorkout()
   };
 
   repClicks = () => {
@@ -62,9 +64,9 @@ class WorkoutTracker extends Component {
           <h5 className="text-white">
             {this.state.results.data.map((x, numb) => (
               <div key={numb} className="text-white">
-                <div className="my-2">{x.day} </div>
+                <div className="my-2 text-center">{x.day} </div>
                 {x.exercise.map((y, num) => (
-                  <div className="bg-primary my-2" key={num}>
+                  <div className="bg-primary my-2" style={{width: "90%", margin: "auto"}} key={num}>
                     {`Exercise: ${num}    Name: ${y.name}  Weight:${y.Weight}`}
                     <div className="bg-secondary">
                     
@@ -73,7 +75,7 @@ class WorkoutTracker extends Component {
                         return <RepsButton num={y.Reps} key={i}> {y.Reps}</RepsButton>;
                       })}
 
-                      <p className="float-right">{`Sets:${y.Sets} Reps:${y.Reps} time between Sets:${y.time}`} </p>
+                      <p className="float-right mr-2">{`Sets:${y.Sets} Reps:${y.Reps} time between Sets:${y.time}`} </p>
                     </div>
                   </div>
                 ))}
@@ -82,13 +84,13 @@ class WorkoutTracker extends Component {
           </h5>
           <button
             onClick={this.endWorkout}
-            className="btn-danger py-1 px-5 mt-3 d-block"
+            className="btn-danger py-1 px-5 mt-4 d-block mx-auto"
           >
             Return to Daily Trainer's Page
           </button>
           <button
             onClick={this.logWorkout}
-            className="btn-success py-1 px-5 mt-3 d-block"
+            className="btn-success py-1 px-5 mt-3 d-block mx-auto"
           >
             Log Workout
           </button>
