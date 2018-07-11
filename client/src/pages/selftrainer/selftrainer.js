@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./selftrainer.css";
 import Nav from "../../components/Nav/Nav";
+import ModalSignUp from "../../components/Modal-signup/ModalSignUp"
 // import SelfTrainerCarousel from "../../components/selfTrainerCarousel/selfTrainerCarousel";
 
 class selfTrainer extends Component {
@@ -25,7 +26,7 @@ class selfTrainer extends Component {
             <p id="script">-The self trainer is the ideal program for someone with a specific plan in mind.</p> <p  id="script">-These trainers are specific to a certain style of workout as well as the particular goals they are designed for.</p><p  id="script">-We have a bodybuilding, powerlifting as well as a circuit/HIIT trainer. Each customized to reach goals in that specific training style. </p>
             
 
-            <h3 id="DTT">-Bodybuilding Trainer <button id="purchase"className="btn btn-outline- ml-4" type="submit">
+            <h3 id="DTT">-Bodybuilding Trainer <button id="purchase"className="btn btn-outline- ml-4" data-toggle="modal" data-target="#exampleModalCenter">
                   Purchase
                 </button></h3>
                 

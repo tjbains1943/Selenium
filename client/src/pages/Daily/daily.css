@@ -1,20 +1,19 @@
-.daily{
+body{
 
-    background-color: rgb(2, 3, 53);
+    /* background-color: rgb(2, 3, 53);
 background-image: url(./Logo.png);
 background-position: center;
 background-repeat: no-repeat;
 background-size: 570px, 320px;
-background-attachment: fixed;
+background-attachment: fixed; */
 
 
-    /* background-image: url("http://www.toca-ch.com/data/walls/34/22320504.jpg"); 
+    background-image: url("http://kabegami.org/wp-content/uploads/2017/04/3QgYR7D2.jpg"); 
 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        background-attachment: fixed; */
 }
 
 #dailypic{
@@ -60,8 +59,7 @@ background-attachment: fixed;
 
 #backdrop{
 
-    background-color:#021128;
-    opacity: 0.9;
+
 }
 
 #footer{

@@ -71,21 +71,21 @@ const Nav = props => (
               className="dropdown-menu"
               aria-labelledby="navbarDropdownMenuLink"
             >
-            <Link to={"/Diet"}>
+            {/* <Link to={"/Diet"}> */}
               <p className="dropdown-item m-0" href="">
                 Recipes
               </p>
-              </Link>
-              <Link to={"/Food"}>
+              {/* </Link> */}
+              {/* <Link to={"/Food"}> */}
               <p className="dropdown-item m-0" href="">
                 Healthy Replacements
               </p>
-              </Link>
-              <Link to={"/Supps"}>
+              {/* </Link> */}
+             
               <p className="dropdown-item m-0" href="">
                 Supplement Recommendations
               </p>
-              </Link>
+              
             </div>
           </li>
           <li className="nav-item">
