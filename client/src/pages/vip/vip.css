@@ -1,4 +1,4 @@
-.vipP{
+/* .vipP{
 
     background-color: rgb(2, 3, 53);
 background-image: url(./Logo.png);
@@ -15,7 +15,7 @@ background-attachment: fixed;
         -o-background-size: cover;
         background-size: cover;
         background-attachment: fixed; */
-}
+ 
 #headerV{
     padding-top: 20px;
     text-align: center;

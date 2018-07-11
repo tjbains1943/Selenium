@@ -29,9 +29,9 @@ const App = () =>
       <Route exact path="/profile" component={Profile} />
       <Route exact path="/selftrainer" component={SelfTrainer} />
       <Route exact path="/vip" component={VIP} />
-      <Route exact path="/diet" component={Diet} />
+      {/* <Route exact path="/diet" component={Diet} />
       <Route exact path="/food" component={Food} />
-      <Route exact path="/supps" component={Supps} />
+      <Route exact path="/supps" component={Supps} /> */}
 
       <Route exact path="/admin" component={Admin} />
       <Route exact path="/adminView" component={AdminView} />
