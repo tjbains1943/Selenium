@@ -109,7 +109,7 @@ class Products extends Component {
         var newProducts = products.map(function(product) {
       
           for (var key in product) {
-            if (key == item.name && product.className == item.className) {
+            if (key === item.name && product.className === item.className) {
               product[key] = item.value;
       
             }
