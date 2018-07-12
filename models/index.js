@@ -1,6 +1,5 @@
 module.exports = {
-    DailyTrainer: require("./dailyTrainers"),
+    DailyTrainer: require("./dailytrainers"),
     Users: require("./users"),
     UserWorkouts: require("./userWorkouts"),
-  };
-  
+};
