@@ -3,7 +3,7 @@ import axios from "axios";
 export default {
   // Gets all users
   getUsers: function() {
-    return axios.get("/api/users");
+    return axios.get("/api/users/workouts");
   },
   // Gets the book with the given id
   getUser: function(user) {

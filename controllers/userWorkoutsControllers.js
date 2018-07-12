@@ -4,7 +4,7 @@ const db = require("../models");
 module.exports = {
   findAll: function(req, res) {
     db.UserWorkouts
-      .find(req.query)
+      .find()
       .sort({ date: -1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
@@ -22,7 +22,7 @@ module.exports = {
         // If a Note was created successfully, find one Article with an `_id` equal to `req.params.id`. Update the Article to be associated with the new Note
         // { new: true } tells the query that we want it to return the updated User -- it returns the original by default
         // Since our mongoose query returns a promise, we can chain another `.then` which receives the result of the query
-        return db.Users.findOneAndUpdate({ _id: req.body.id }, { workOuts: dbModel._id }, { new: true });
+        return db.Users.findOneAndUpdate({}, { $push: { workOuts: dbModel._id } }, { new: true })
       })
       .then(function(dbUsers) {
         // If we were able to successfully update an Article, send it back to the client

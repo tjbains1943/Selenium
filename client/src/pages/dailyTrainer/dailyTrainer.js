@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import moment from 'moment'
+
 import Nav from "../../components/Nav/Nav";
 import TableAPI from "../../utils/Table-API";
 import "./dailyTrainer.css";
@@ -31,9 +33,22 @@ class WorkoutTracker extends Component {
   };
 
   beginWorkout = () => {
-    console.log(123);
+
     this.setState({ startWorkout: true });
+
   };
+
+  getDay = () => {
+    var date = new Date();
+    var dayNum = date.getDay();
+    var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    return days[dayNum]
+  }
+
+  getDate = () => {
+    console.log(moment().format("MMM Do YY"));
+    return moment().format("MMM Do YY");   
+  }
 
   endWorkout = () => {
     console.log(123);
@@ -41,6 +56,17 @@ class WorkoutTracker extends Component {
   };
   logWorkout = () => {
     console.log(68);
+    this.state.results.data.forEach(element => {
+      if (element.day === this.getDay()) {
+        console.log(element);
+        element.date = this.getDate();
+        WorkoutAPI.saveWorkout(element).
+        then(results => {
+          console.log(results);
+        })
+      }
+    });
+    // let data = this.state.results.data.
     // WorkoutAPI.saveWorkout()
   };
 
@@ -62,23 +88,33 @@ class WorkoutTracker extends Component {
           <Nav />
           <h1>Workout Tracker</h1>
           <h5 className="text-white">
+          
             {this.state.results.data.map((x, numb) => (
               <div key={numb} className="text-white">
-                <div className="my-2 text-center">{x.day} </div>
-                {x.exercise.map((y, num) => (
+                <div className="my-2 text-center">{x.day === this.getDay() ? x.day : ""} </div>
+                {x.day === this.getDay() ?  x.exercise.map((y, num) => (
                   <div className="bg-primary my-2" style={{width: "90%", margin: "auto"}} key={num}>
                     {`Exercise: ${num}    Name: ${y.name}  Weight:${y.Weight}`}
                     <div className="bg-secondary" style={{overflow: "hidden"}}> 
                     
-    {/* change 5 to y.Sets */}
+                      {/* change 5 to y.Sets */}
                       { y.Sets ? Array.apply(0, Array(parseInt(y.Sets, 10))).map(function(x, i) {
                         return <RepsButton num={y.Reps} key={i}> {y.Reps}</RepsButton> 
                       }): "error"}
+                {/* {x.exercise.map((y, num) => (
+                  <div className="bg-primary my-2" style={{width: "90%", margin: "auto"}} key={num}>
+                    {`Exercise: ${num}    Name: ${y.name}  Weight:${y.Weight}`}
+                    <div className="bg-secondary" style={{overflow: "hidden"}}> 
+                    
+                      {/* change 5 to y.Sets */}
+                      {/* { y.Sets ? Array.apply(0, Array(parseInt(y.Sets, 10))).map(function(x, i) {
+                        return <RepsButton num={y.Reps} key={i}> {y.Reps}</RepsButton> 
+                      }): "error"} */} 
 
                       <p className="float-right mr-2">{`Sets:${y.Sets} Reps:${y.Reps} time between Sets:${y.time}`} </p>
                     </div>
                   </div>
-                ))}
+                )) : ""} 
               </div>
             ))}
           </h5>
