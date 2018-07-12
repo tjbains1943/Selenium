@@ -23,12 +23,12 @@ const App = () =>
     <Router>
     <Switch>
       
-      <Route exact path="/" component={Home} />
-      {/* <Route exact path="/daily" component={Daily}/>
-      <Route exact path="/signup" component={Signup} />
+      {/* <Route exact path="/" component={Home} /> */}
+      {/* <Route exact path="/daily" component={Daily}/> */}
+      {/* <Route exact path="/signup" component={Signup} /> */}
       <Route exact path="/profile" component={Profile} />
-      <Route exact path="/selftrainer" component={SelfTrainer} />
-      <Route exact path="/vip" component={VIP} /> */}
+      {/* <Route exact path="/selftrainer" component={SelfTrainer} /> */}
+      {/* <Route exact path="/vip" component={VIP} /> */}
       {/* <Route exact path="/diet" component={Diet} />
       <Route exact path="/food" component={Food} />
       <Route exact path="/supps" component={Supps} /> */}
