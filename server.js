@@ -21,9 +21,8 @@ app.use(routes);
 // Set up promises with mongoose
 mongoose.Promise = global.Promise;
 // Connect to the Mongo DB
-mongoose.connect(
-    "mongodb://heroku_9tn1sb2j:no3vq295886njsr1t4balt7eu6@ds133621.mlab.com:33621/heroku_9tn1sb2j"
-);
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/simplyFIT");
+
 
 // Start the API server
 app.listen(PORT, function() {
