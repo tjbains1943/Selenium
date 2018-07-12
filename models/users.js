@@ -13,7 +13,7 @@ const users = new Schema({
     VIP: { type: Boolean, default: false },
     workOuts: {
         type: Schema.Types.ObjectId,
-        ref: "userworkouts"
+        ref: "UserWorkouts"
       }
     
 });

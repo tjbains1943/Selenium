@@ -22,7 +22,7 @@ module.exports = {
         return db.Users.findOneAndUpdate({}, { $push: { workOuts: dbModel._id } }, { new: true })
       })
       .then(function(dbUsers) {
-       
+       console.log(dbUsers);
         res.json(dbUsers);
       })
       .catch(function(err) {
