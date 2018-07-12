@@ -68,12 +68,12 @@ class WorkoutTracker extends Component {
                 {x.exercise.map((y, num) => (
                   <div className="bg-primary my-2" style={{width: "90%", margin: "auto"}} key={num}>
                     {`Exercise: ${num}    Name: ${y.name}  Weight:${y.Weight}`}
-                    <div className="bg-secondary">
+                    <div className="bg-secondary" style={{overflow: "hidden"}}> 
                     
     {/* change 5 to y.Sets */}
-                      {Array.apply(0, Array(parseInt(y.Sets, 10))).map(function(x, i) {
-                        return <RepsButton num={y.Reps} key={i}> {y.Reps}</RepsButton>;
-                      })}
+                      { y.Sets ? Array.apply(0, Array(parseInt(y.Sets, 10))).map(function(x, i) {
+                        return <RepsButton num={y.Reps} key={i}> {y.Reps}</RepsButton> 
+                      }): "error"}
 
                       <p className="float-right mr-2">{`Sets:${y.Sets} Reps:${y.Reps} time between Sets:${y.time}`} </p>
                     </div>
