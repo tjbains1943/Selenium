@@ -16,6 +16,7 @@ class Profile extends Component {
         display= res.data.firstName;
         this.setState({
           display })
+        this.workoutData()
       })
       
     }
@@ -26,6 +27,11 @@ class Profile extends Component {
     }
   }
  
+  workoutData = () => {
+    API.getUsers().then(results => {
+      this.setState({results , truthy: true})
+    })
+  }
   SignOut = () => {
     localStorage.removeItem('token');
     console.log(678);
@@ -33,7 +39,7 @@ class Profile extends Component {
 
 
 
-  render() {     
+  render() {   
     return (
       <div className="Prof">
         <NavSignedIn 
@@ -56,12 +62,15 @@ class Profile extends Component {
           </div>
         </div>
 
-        <div className="row" id="div">
+        <div className="row text-white" id="div">
           <div className="col-md-6">
             <p id="script">
               {" "}
               information input goes here, (height,weight etc..){" "}
             </p>
+            <h5 id="script">Previous Workouts</h5>
+            {this.state.truthy ? <div className="text-white">{this.state.results.data[0].firstName}</div> : "No data"}
+
           </div>
         </div>
         <div className="col-md-12">

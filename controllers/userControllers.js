@@ -41,7 +41,7 @@ module.exports = {
   },
   findById: function(req, res) {
     db.Users.find({})
-    .populate("workouts")
+    .populate("workOuts")
     .then(function(dbUser) {
       console.log(dbUser);
       res.json(dbUser);
