@@ -7,7 +7,7 @@ router.route("/newUser").post(userControllers.create);
 
 router.route("/auth").post(userControllers.findAuth);
 
-router.route("/workouts").get(userControllers.findById)
+router.route("/workouts").post(userControllers.findById)
 router
   .route("/:id")
   .get(userControllers.findById)

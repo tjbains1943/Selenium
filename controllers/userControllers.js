@@ -40,7 +40,8 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   findById: function(req, res) {
-    db.Users.find({})
+    console.log(req);
+    db.Users.findOne({email: req.body.email})
     .populate("workOuts")
     .then(function(dbUser) {
       console.log(dbUser);

@@ -3,7 +3,22 @@ import "./profile.css";
 // import Nav from "../../components/Nav/Nav";
 import NavSignedIn from "../../components/NavSignedIn/NavSignedIn";
 import API from "../../utils/API";
+import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, ReferenceLine,
+  ReferenceDot, Tooltip, CartesianGrid, Legend, Brush, ErrorBar, AreaChart, Area,
+  Label, LabelList } from 'recharts';
 var display;
+const data = [
+  { name: 'Page A', uv: 1000, pv: 2400, amt: 2400, uvError: [75, 20] },
+  { name: 'Page B', uv: 300, pv: 4567, amt: 2400, uvError: [90, 40] },
+  { name: 'Page C', uv: 280, pv: 1398, amt: 2400, uvError: 40 },
+  { name: 'Page D', uv: 200, pv: 9800, amt: 2400, uvError: 20 },
+  { name: 'Page E', uv: 278, pv: null, amt: 2400, uvError: 28 },
+  { name: 'Page F', uv: 189, pv: 4800, amt: 2400, uvError: [90, 20] },
+  { name: 'Page G', uv: 189, pv: 4800, amt: 2400, uvError: [28, 40] },
+  { name: 'Page H', uv: 189, pv: 4800, amt: 2400, uvError: 28 },
+  { name: 'Page I', uv: 189, pv: 4800, amt: 2400, uvError: 28 },
+  { name: 'Page J', uv: 189, pv: 4800, amt: 2400, uvError: [15, 60] },
+];
 class Profile extends Component {
   state = {}
 
@@ -12,10 +27,17 @@ class Profile extends Component {
     // this.setState({display: "chicken"})
     if (cat !== "undefined") {
       API.getAuth(cat).then(res => {
-        console.log(res.data.firstName);
+        console.log(res.data);
         display= res.data.firstName;
+        let user = {
+          email: res.data.email,
+          password: res.data.password,
+        };
+        console.log(user);
         this.setState({
-          display })
+          display,
+          user
+         })
         this.workoutData()
       })
       
@@ -28,7 +50,8 @@ class Profile extends Component {
   }
  
   workoutData = () => {
-    API.getUsers().then(results => {
+    API.getUsers(this.state.user).then(results => {
+      console.log(results);
       this.setState({results , truthy: true})
     })
   }
@@ -59,6 +82,18 @@ class Profile extends Component {
 
           <div className="col-md-6">
             <h1 id="sidebox">analytics chart goes here...</h1>
+            <LineChart
+  width={400}
+  height={400}
+  data={data}
+  margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
+>
+  <XAxis dataKey="name" />
+  <Tooltip />
+  <CartesianGrid stroke="#f5f5f5" />
+  <Line type="monotone" dataKey="uv" stroke="#ff7300" yAxisId={0} />
+  <Line type="monotone" dataKey="pv" stroke="#387908" yAxisId={1} />
+</LineChart>
           </div>
         </div>
 
@@ -69,7 +104,28 @@ class Profile extends Component {
               information input goes here, (height,weight etc..){" "}
             </p>
             <h5 id="script">Previous Workouts</h5>
-            {this.state.truthy ? <div className="text-white">{this.state.results.data[0].firstName}</div> : "No data"}
+            {this.state.truthy ? <div className="text-white">{this.state.results.data.workOuts.map((x, num) => (
+            <ul>{num}
+              <li>Date: {x.date}</li>
+            <li>Day:{x.day}</li>
+            <li>Trainer Type: {x.trainerType}</li>
+            <li>Workout: {x.exercise.map((y,numb) => (
+              <div>
+                <ul> {numb}
+              <li>Exercise: {y.name}</li>
+              <li>Reps: {y.Reps}</li>
+              <li>Sets: {y.Sets}</li>
+              <li>Weight: {y.Weight}</li>
+
+              </ul>
+              </div>
+            ))}</li>
+            
+            </ul>
+  
+          )
+          
+          )}</div> : "No data"}
 
           </div>
         </div>

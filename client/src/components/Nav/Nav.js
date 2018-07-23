@@ -109,6 +109,27 @@ const Nav = props => (
             </p>
             </Link>
           </li>
+          <li className="nav-item">
+          <Link to={"/admin"}>
+            <p id="simple" className="nav-link m-0" href="">
+              Pricing
+            </p>
+            </Link>
+          </li>
+          <li className="nav-item">
+          <Link to={"/signup"}>
+            <p id="simple" className="nav-link m-0" href="">
+              <strong>Sign Up</strong>
+            </p>
+            </Link>
+          </li>
+          <li className="nav-item">
+          <Link to={"/"}>
+            <p id="simple" className="nav-link m-0" href="">
+              Login
+            </p>
+            </Link>
+          </li>
           <li id="push">
             <form className="form-inline my-2 my-lg-0">
               <input
@@ -132,12 +153,6 @@ const Nav = props => (
               <button className="signIN btn" onClick={props.onClick} type="submit">
                 Sign-In
               </button>
-              
-              <Link to={"/signup"}>
-                <button className="signIN btn" type="submit">
-                  Sign-Up
-                </button>
-              </Link>
             </form>
           </li>
         </ul>
