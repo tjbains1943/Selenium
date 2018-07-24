@@ -76,6 +76,15 @@ class Profile extends Component {
           <div className="row" id="div">
           <div className="col-md-6">
             <p id="script"> -Track your progress!</p>
+            <div className="text-white border col-md-4"><strong>Stats</strong>
+              <ul className="list-unstyled">
+                <li>Package: Premium or VIP</li>
+                <li>Height: height here</li>
+                <li>Weight: weight here</li>
+                <li>BMI: body mass index here</li>
+                <button className="mt-2" type="submit">Update</button>
+              </ul>
+            </div>
             <p id="script"> -Stay on top of your goals!</p>
             <p id="script"> -Enter your informatio below.</p>
           </div>
