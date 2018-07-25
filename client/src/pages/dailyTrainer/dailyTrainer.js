@@ -26,7 +26,7 @@ class WorkoutTracker extends Component {
     console.log(123);
     TableAPI.getTable({ trainerType: this.state.trainerType })
       .then(results => {
-        console.log(results);
+        // console.log(results);
         this.setState({ results: results });
       })
       .catch(err => console.log(err));
@@ -46,7 +46,7 @@ class WorkoutTracker extends Component {
   }
 
   getDate = () => {
-    console.log(moment().format("MMM Do YY"));
+    // console.log(moment().format("MMM Do YY"));
     return moment().format("MMM Do YY");   
   }
 
@@ -58,11 +58,11 @@ class WorkoutTracker extends Component {
     console.log(68);
     this.state.results.data.forEach(element => {
       if (element.day === this.getDay()) {
-        console.log(element);
+        // console.log(element);
         element.date = this.getDate();
         WorkoutAPI.saveWorkout(element).
         then(results => {
-          console.log(results);
+          // console.log(results);
         })
       }
     });

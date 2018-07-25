@@ -3,9 +3,8 @@ import "./profile.css";
 // import Nav from "../../components/Nav/Nav";
 import NavSignedIn from "../../components/NavSignedIn/NavSignedIn";
 import API from "../../utils/API";
-import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, ReferenceLine,
-  ReferenceDot, Tooltip, CartesianGrid, Legend, Brush, ErrorBar, AreaChart, Area,
-  Label, LabelList } from 'recharts';
+import { LineChart, Line, XAxis,
+   Tooltip, CartesianGrid } from 'recharts';
 var display;
 const data = [
   { name: 'Page A', uv: 1000, pv: 2400, amt: 2400, uvError: [75, 20] },
@@ -33,7 +32,7 @@ class Profile extends Component {
           email: res.data.email,
           password: res.data.password,
         };
-        console.log(user);
+        // console.log(user);
         this.setState({
           display,
           user
@@ -51,7 +50,7 @@ class Profile extends Component {
  
   workoutData = () => {
     API.getUsers(this.state.user).then(results => {
-      console.log(results);
+      // console.log(results);
       this.setState({results , truthy: true})
     })
   }
@@ -76,21 +75,24 @@ class Profile extends Component {
           <div className="row" id="div">
           <div className="col-md-6">
             <p id="script"> -Track your progress!</p>
-            <div className="text-white border col-md-4"><strong>Stats</strong>
+            <div className="text-white border col-md-4 mr-5 float-left"><strong>Stats</strong>
               <ul className="list-unstyled">
                 <li>Package: Premium or VIP</li>
                 <li>Height: height here</li>
                 <li>Weight: weight here</li>
-                <li>BMI: body mass index here</li>
-                <button className="mt-2" type="submit">Update</button>
+                <button className="mt-2" type="submit">Update weight</button>
               </ul>
             </div>
-            <p id="script"> -Stay on top of your goals!</p>
-            <p id="script"> -Enter your informatio below.</p>
+            <div className="text-white border col-md-4 ml-5 float-left">
+              <ul className="list-unstyled">
+              <li>Select exercise to display Strength graph: Coming soon...</li>
+                <li>Select exercise to display Volume graph: Coming soon... </li>
+              </ul>
+              </div>
           </div>
 
           <div className="col-md-6">
-            <h1 id="sidebox">analytics chart goes here...</h1>
+            <h1 id="sidebox">Analytics</h1>
             <LineChart
   width={400}
   height={400}
@@ -99,7 +101,7 @@ class Profile extends Component {
 >
   <XAxis dataKey="name" />
   <Tooltip />
-  <CartesianGrid stroke="#f5f5f5" />
+  <CartesianGrid fill="red" verticalFill={['#555555', '#444444']} fillOpacity={0.9} />
   <Line type="monotone" dataKey="uv" stroke="#ff7300" yAxisId={0} />
   <Line type="monotone" dataKey="pv" stroke="#387908" yAxisId={1} />
 </LineChart>
@@ -114,12 +116,12 @@ class Profile extends Component {
             </p>
             <h5 id="script">Previous Workouts</h5>
             {this.state.truthy ? <div className="text-white">{this.state.results.data.workOuts.map((x, num) => (
-            <ul>{num}
+            <ul key={num}>{num}
               <li>Date: {x.date}</li>
             <li>Day:{x.day}</li>
             <li>Trainer Type: {x.trainerType}</li>
             <li>Workout: {x.exercise.map((y,numb) => (
-              <div>
+              <div key={numb}>
                 <ul> {numb}
               <li>Exercise: {y.name}</li>
               <li>Reps: {y.Reps}</li>

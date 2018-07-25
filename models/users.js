@@ -6,7 +6,11 @@ const users = new Schema({
     email: { type: String, required: true },
     password: { type: String, required: true },
     height: { type: String, required: false },
-    weight: { type: String, required: false },
+    weight: { type: [{
+      date: { type: String, required: false},
+      weight: { type: String, required: false},
+      weightType: { type: String, required: false},
+    }], required: false},
     date: { type: Date, required: false },
     Free: { type: Boolean, default: false },
     dailyTrainer: { type: Boolean, default: false },
