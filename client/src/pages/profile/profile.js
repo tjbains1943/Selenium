@@ -77,7 +77,7 @@ class Profile extends Component {
             <p id="script"> -Track your progress!</p>
             <div className="text-white border col-md-4 mr-5 float-left"><strong>Stats</strong>
               <ul className="list-unstyled">
-                <li>Package: Premium or VIP</li>
+                <li>Package: Free or Basic or VIP</li>
                 <li>Height: height here</li>
                 <li>Weight: weight here</li>
                 <button className="mt-2" type="submit">Update weight</button>
@@ -101,7 +101,8 @@ class Profile extends Component {
 >
   <XAxis dataKey="name" />
   <Tooltip />
-  <CartesianGrid fill="red" verticalFill={['#555555', '#444444']} fillOpacity={0.9} />
+  {/* verticalFill={['#1a0000', '#330000']} */}
+  <CartesianGrid fill="white" fillOpacity={.9} />
   <Line type="monotone" dataKey="uv" stroke="#ff7300" yAxisId={0} />
   <Line type="monotone" dataKey="pv" stroke="#387908" yAxisId={1} />
 </LineChart>
